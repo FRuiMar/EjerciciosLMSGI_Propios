@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE videoclub [
+  <!ELEMENT videoclub (socios, peliculas)*>
+  <!ELEMENT socios (socio+)>
+  <!ELEMENT socio (numeroSocio, DNI, nombreSoc, tlf+)>
+  <!ELEMENT numeroSocio ANY>
+  <!ELEMENT DNI ANY>
+  <!ELEMENT nombreSoc ANY>
+  <!ELEMENT tlf ANY>
+  <!ELEMENT peliculas (pelicula+)>
+  <!ELEMENT pelicula (nombrePel, anio, numEjemplar, director, novedad?, (alquilada | disponible))>
+  <!ELEMENT nombrePel (#PCDATA)>
+  <!ELEMENT anio ANY>
+  <!ELEMENT numEjemplar (#PCDATA)>
+  <!ELEMENT director (#PCDATA)>
+  <!ELEMENT novedad EMPTY>
+  <!ELEMENT alquilada EMPTY>
+  <!ELEMENT disponible EMPTY>
+
+
+  <!ATTLIST album nombre CDATA #REQUIRED>
+  <!ATTLIST album fecha (1969 |1970 | 1971 | 1972 | 1973 |1974) >
+]>
+
+<videoclub>
+  <socios>
+    <socio>
+      <numeroSocio>xxxxxx</numeroSocio>
+      <DNI>xxxxxx</DNI>
+      <nombreSoc>xxxxxxx</nombreSoc>
+      <tlf>xxxxxxx</tlf>
+    </socio>
+  </socios>
+  <peliculas>
+    <pelicula>
+      <nombrePel>El Padrino</nombrePel>
+      <anio>xxxxxxx</anio>
+      <numEjemplar>xxxxxxx</numEjemplar>
+      <director>xxxxxxx</director>
+      <alquilada/>
+    </pelicula>
+  </peliculas>
+  
+  
+</videoclub>
