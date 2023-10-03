@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE inventores [
+  <!ELEMENT inventores (inventor*) >
+  <!ELEMENT inventor EMPTY>
+  <!ATTLIST inventor invento CDATA #REQUIRED>
+  <!ATTLIST inventor nombre ID >
+]>
+
+<inventores>
+  <inventor nombre="Robert_Adler" invento="Mando a distancia" />
+  <inventor nombre="Laszlo_Josef_Biro" invento="Bolígrafo" />
+  <inventor nombre="Josephine_Garis_Cochran" invento="Lavaplatos" />
+  <inventor invento="Fuego" />
+</inventores>
