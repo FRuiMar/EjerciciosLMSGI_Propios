@@ -13,21 +13,21 @@
 	</reptiles>
 	<mamiferos>
  		<mamifero codigo="ABC-(12345)">
-			<nombre valor="Toby"/>
+			<nombre valor="Toby"/> <!-- elemento vacio-->
 			<raza>
 				<perro/>
 			</raza>
 			<descripcion>Un perro precioso</descripcion>
 		</mamifero>
 		<mamifero codigo="ZYX-(98765)">
-			<nombre valor="Willy"/>
+			<nombre valor="Willy"/>  <!-- vacio-->
 			<raza>
 				<orca/>
 			</raza>
 			<descripcion>Es una orca muy graciosa</descripcion>
 		</mamifero>
 		<mamifero codigo="GHI-(55567)">
-			<nombre valor="Flipper"/>
+			<nombre valor="Flipper"/>  <!-- vacio-->
 			<raza>
 				<delfin/>
 			</raza>

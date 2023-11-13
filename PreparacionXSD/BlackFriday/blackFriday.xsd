@@ -23,7 +23,7 @@
   </xs:complexType>
 
 
-    
+  <!-- EJERCICIO 14-->  
   <xs:complexType name="tipoAgregadoACestaDeCompra">
     <xs:simpleContent>
       <xs:extension base="validacionTipoAgregado">
@@ -38,6 +38,7 @@
       <xs:pattern value="(Lunes|Martes|Miércoles|Jueves|Viernes|Sábado|Domingo) \d{1,2} de (Enero|Febrero|Marzo|Abril|Mayo|Junio|Julio|Agosto|Septiembre|Octubre|Noviembre|Diciembre) de \d{4}"/>
     </xs:restriction>
   </xs:simpleType>
+ <!-- EJERCICIO 14-->  
 
 
 
@@ -45,8 +46,7 @@
 
 
 
-
-
+<!-- TIPO CHOICE-->
   
   <xs:complexType name="tipoFabricante">
     <xs:choice>
@@ -86,6 +86,8 @@
     </xs:sequence>
   </xs:complexType>
 
+
+  <!-- ESTO ES UN EJERCICIO 19. DERIVADA DE COMPLEJO-->
   <xs:complexType name="tipoAutorTexto">
     <xs:sequence>
       <xs:element name="autor" type="tipoAutor"/>
@@ -104,6 +106,7 @@
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>  
+<!-- HASTA AQUI EJERCICIO 19-->
 
   <xs:simpleType name="tipoFecha">
     <xs:restriction base="xs:string">
@@ -146,7 +149,10 @@
   <xs:simpleType name="tipoVotantes">
     <xs:list itemType="tipoAutor"></xs:list>
   </xs:simpleType>
-
+ 
+ 
+ 
+  <!--CREAMOS UN TIPO UNION CREANDO PREVIAMENTO DOS SIMPLE TYPES RESTRICTION ENUMERATION CON VALORES -->
   <xs:simpleType name="tiposNombresMasculinos">
     <xs:restriction base="xs:string">
       <xs:enumeration value="Pedro"/>
@@ -169,6 +175,6 @@
   <xs:simpleType name="tipoAutor">
     <xs:union memberTypes="tiposNombresMasculinos tiposNombresFemeninos"/>
   </xs:simpleType>
-
+<!-- HASTA AQUÍ HACEMOS EL UNION EN UN SIMPLETYPE XS:UNION Y PONEMOS EL NOMBRE DE LOS DOS GRUPOS ANTERIOES-->
   
 </xs:schema>
