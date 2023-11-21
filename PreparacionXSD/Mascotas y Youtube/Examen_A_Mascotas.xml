@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tiendaMascotas nombre="Mascotas Villalba, S.A." xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="examenA.xsd">
+<tiendaMascotas nombre="Mascotas Villalba, S.A." xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="examenA copy.xsd">
 	<reptiles>
  		<reptil>Boa constrictor
 			<peso unidadMedida="Kg">65</peso>
