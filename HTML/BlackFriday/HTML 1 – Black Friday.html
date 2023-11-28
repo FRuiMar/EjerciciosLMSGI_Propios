@@ -10,47 +10,55 @@
 	    	body {
 	    		margin: 50px;
 		    	padding: 0px;
-			    background: #d6d7da;
+			    background: #e0e0e0;
     			font-family: 'Open Sans', sans-serif;
     			font-size: 11pt;
     			color: #030303;
     		}
     		h1 {
-    			color: #ed8021;
+    			color: #ff6600;
     		}
 
             h2 {
-    			color: #337693;
+    			color: #359afe;
     		}
+
             h3 {
-    			color: #7b0909;
+    			color: #910e18;
     		}
 
             .colorElectronicos {
-                color: #084d10;
+                color: #046327;
             }
 
             .paddingElectronicos2 {
                 padding: 10px;
-                background-color: yellow;
+                background-color: #ffffcd;
             }
 
     		a {
-    			color: #0916aa;  
+    			color: #0308ec;  
     		}
 
     		a:hover {
-    			color: #600263; 
+    			color: #521d8c; 
     			font-weight:normal;
     			text-decoration:underline;
     		}
+
             img:hover{
                 transform: scale(1.1);
             }
 
-            table {
-            border-radius: 5px;
-        }
+
+            table, th, td {
+                border-radius: 5px;
+                border: 1px solid rgb(35, 34, 34);
+                border-collapse: collapse;
+                border-color:dimgray;
+                padding: 10px;
+            }
+        
     	</style>
     </head>
     <body>
@@ -84,11 +92,11 @@
         <h2>Ropa y Accesorios</h2>
         <p>Actualiza tu estilo con nuestras ofertas en ropa y accesorios de moda.</p> 
         <img src="./Images/Ropa.jpg" height="300px">
-        <p id="Ofertas_destacadas">Ofertas destacadas</p>
+        <p id="Ofertas_destacadas", style="text-align: center;">Ofertas destacadas</p>  <!-- Debemos evitar los instyles... -->
 
 
-        <table width="100%" border="1" height="120px">
-            <tr>
+        <table width="100%"  height="120px">
+            <tr style="background-color: #cccccc;">
                 <th>Producto</th>
                 <th colspan="2">Descuentos</th>
             </tr>
@@ -107,6 +115,6 @@
                 <td>¡Compra dos pares y obten un 10% adicional!</td>
             </tr>
         </table>
-        <p>Estas son solo algunas de las ofertas que tenemos para ti. ¡No te pierdas nuestras increibles promociones!</p>
+        <p>Éstas son sólo algunas de las ofertas que tenemos para ti. ¡No te pierdas nuestras increibles promociones!</p>
     </body> 
 </html>
