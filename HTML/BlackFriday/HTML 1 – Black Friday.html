@@ -27,6 +27,10 @@
     			color: #910e18;
     		}
 
+            p {
+                line-height: 1.5em;
+            }
+
             .colorElectronicos {
                 color: #046327;
             }
@@ -58,6 +62,9 @@
                 border-color:dimgray;
                 padding: 10px;
             }
+            .Encabezado {
+                background-color: #cccccc;
+            }
         
     	</style><!-- saco colores parecidos con colorpicker -->
     </head>
@@ -72,7 +79,7 @@
         <p>Renueva tu armario con nuestras increíbles ofertas en ropa y accesorios de moda.</p>
         <hr />
         <h2>Ofertas Destacadas</h2>
-        <ul>
+        <ul style="list-style-type:circle;">     <!-- preguntar si uso instyle o se crea clase. Y si lo quiero poner en sólo uno de los dos?instyle o clase? -->
             <li>
                 <a href="#Electronicos"> Electronicos </a>
             </li>
@@ -96,7 +103,7 @@
         <p id="Ofertas_destacadas", style="text-align: center;">Ofertas destacadas</p>  <!-- Debemos evitar los instyles... -->
 
         <table width="100%"  height="120px">
-            <tr style="background-color: #cccccc;">
+            <tr class="Encabezado">
                 <th>Producto</th>
                 <th colspan="2">Descuentos</th>
             </tr>
@@ -104,7 +111,6 @@
                 <td rowspan="2">Camisas</td>
                 <td>30%</td>
                 <td>¡Sólo por hoy!</td>
-               
             </tr>
             <tr>
                 <td colspan="2">Variedad de colores y tallas disponibles</td>
@@ -112,7 +118,7 @@
             <tr>
                 <td>Zapatos</td>
                 <td>20%</td>
-                <td>¡Compra dos pares y obten un 10% adicional!</td>
+                <td>¡Compra dos pares y obtén un 10% adicional!</td>
             </tr>
         </table>
         <p>Éstas son sólo algunas de las ofertas que tenemos para ti. ¡No te pierdas nuestras increibles promociones!</p>
