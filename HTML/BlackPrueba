@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta meta="Content-Type" content="text/html; charset=UTF-8" /> <!-- el charset iso-8859-1 significa "español" -->
+    <meta name="keywords" content="Palabras clave para que un buscador indexe esta p&aacute;gina" />
+    <meta name="description" content="Descripci&oacute;n de esta p&aacute;gina web" />
+    <meta name="author" content="Eloy">
+    <title>¡Ofertas de Black Friday!</title>
+    <style type="text/css">
+        body {
+            margin: 50px;
+            padding: 0px;
+            background: #cacac7;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 11pt;
+            color: #070707;
+        }
+
+        h1 {
+            color: #eb5d10;
+        }
+
+        h2 {
+            color: #3e55c8;
+
+        }
+
+        h3 {
+            color: #dd0b0b;
+
+        }
+        .class {
+            color: #070707;
+        }
+
+        th {
+            background: rgb(118, 118, 115);
+        }
+            th,td {
+                text-align:left;
+                border-collapse: collapse;
+            }
+        table {
+            border-radius: 5px;
+        }
+
+        a:hover {
+            color: blueviolet;
+            font-weight: normal;
+            text-decoration: underline;
+        }
+
+        #Electronicos {
+            background-color: #f1ef7d;
+            padding: 10px;
+           
+        }
+       
+        img:hover {
+            transform: scale(1.1);
+
+        }
+
+        #Ofertas_destacadas {
+            text-align:center;
+            color: rgb(18, 17, 18);
+        }
+        #Electronicos1 {
+            color: rgb(11, 199, 39);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>¡Ofertas de Black Friday!</h1>
+    <p>Bienvenido a nuestra pagina de ofertas para el Black Friday. Descubre descuentos increibles
+        en una variedad de productos</p>
+    <h2 id="Electronicos1">Electronicos</h2>
+    <p>Encuentra las mejores ofertas en electronicos para este Black Friday</p>
+    <h3>telefonos inteligentes</h3>
+    <p>Descubre descuentos exclusivos en los ultimos modelos de telefonos inteligentes</p>
+    <h2>Ropa y Accesorios</h2>
+    <p>Renueva tu armario con nuestrasofertas en ropa y Accesorios de moda</p>
+    <hr />
+    <h2>Ofertas Destacadas</h2>
+    <ul>
+        <li>
+            <a href="#Electronicos">Electronicos</a>
+        </li>
+        <li>
+            <a href="#Ropa y Accesorios">Ropa y Accesorios</a>
+        </li>
+    </ul>
+    <a name="marcadorElectronicos"></a>
+    <h2 id="Electronicos">Electronicos</h2>
+    <p>Descubre nuestras ofertas en electronicos y tecnologia avanzada</p>
+    <img src="https://previews.123rf.com/images/vectorshowstudio/vectorshowstudio1703/vectorshowstudio170301128/74586676-electr%C3%B3nica-gadgets-iconos-tecnolog%C3%ADa-electr%C3%B3nica-dispositivos-multimedia-objetos-cotidianos-control.jpg"
+        height="320px" />
+    <h3>Tabletas</h3>
+    <p>¡Aprobecha los descuentos en las ultimas tabletas!</p>
+    <h3>telefonos inteligentes</h3>
+    <p>Los mejores modelos de telefonos inteligentes a precios irresistibles</p>
+    <a name="marcadorRopa y Accesorios"></a>
+    <h2 id="Ropa y Accesorios">Ropa y Accesorios</h2>
+    <p>Actualiza tu estilo con nuestra ofertas en ropa y accesorios de moda</p>
+    <img src="https://media.istockphoto.com/id/878320722/es/vector/ropa-de-abrigo-casual-hombres-en-parrilla-de-suspensi%C3%B3n.jpg?s=612x612&w=0&k=20&c=O4soNGrwNGPQGPIhqXN0vjwTZ1WQHsmBFP64zD_0kcw="
+        height="160px" width="300px" />
+    <p id="Ofertas_destacadas">Ofertas destacadas</p>
+
+    <table width="100%" border="1" height="120px">
+        <tr>
+            <th>Producto</th>
+            <th colspan="2">Descuentos</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Camisas</td>
+            <td>30%</td>
+            <td>¡solo por hoy!</td>
+           
+        </tr>
+        <tr>
+            <td colspan="2">Variedad de colores y tallas disponibles</td>
+        </tr>
+        <tr>
+            <td>zapatos</td>
+            <td>20%</td>
+            <td>¡Compra dos pares y obten un 10% adicional!</td>
+        </tr>
+    </table>
+    <p>Estas son solo algunas de las ofertas que tenemos para ti. ¡No te pierdas nuestras increibles promociones!</p>
+</body>
+</html>

@@ -10,7 +10,7 @@
 	    	body {
 	    		margin: 50px;
 		    	padding: 0px;
-			    background: #cfd1d4;
+			    background: #d6d7da;
     			font-family: 'Open Sans', sans-serif;
     			font-size: 11pt;
     			color: #030303;
@@ -20,7 +20,7 @@
     		}
 
             h2 {
-    			color: #43b0db;
+    			color: #337693;
     		}
             h3 {
     			color: #7b0909;
@@ -35,10 +35,6 @@
                 background-color: yellow;
             }
 
-    		.parrafopropio {
-    			margin: 15px;
-    		}
-
     		a {
     			color: #0916aa;  
     		}
@@ -51,6 +47,10 @@
             img:hover{
                 transform: scale(1.1);
             }
+
+            table {
+            border-radius: 5px;
+        }
     	</style>
     </head>
     <body>
@@ -72,6 +72,7 @@
                 <a href="#Ropa y Accesorios"> Ropa y Accesorios </a>
             </li>
         </ul>
+        <a name="Electronicos"></a>
         <h2 class ="paddingElectronicos2">Electrónicos</h2>
         <p>Descubre nuestras ofertas en electrónicos y tecnología"</p> 
         <img src="./Images/ProductosInformaticos.jpg" height="300px">
@@ -79,8 +80,33 @@
         <p>¡Aprovecha los decuentos en las últimas tabletas!</p> 
         <h3>Teléfonos inteligentes</h3>
         <p>Los mejores modelos de teléfonos inteligentes a precios irresistibles</p> 
+        <a name="Ropa y Accesorios"></a>
         <h2>Ropa y Accesorios</h2>
         <p>Actualiza tu estilo con nuestras ofertas en ropa y accesorios de moda.</p> 
         <img src="./Images/Ropa.jpg" height="300px">
+        <p id="Ofertas_destacadas">Ofertas destacadas</p>
+
+
+        <table width="100%" border="1" height="120px">
+            <tr>
+                <th>Producto</th>
+                <th colspan="2">Descuentos</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Camisas</td>
+                <td>30%</td>
+                <td>¡Sólo por hoy!</td>
+               
+            </tr>
+            <tr>
+                <td colspan="2">Variedad de colores y tallas disponibles</td>
+            </tr>
+            <tr>
+                <td>Zapatos</td>
+                <td>20%</td>
+                <td>¡Compra dos pares y obten un 10% adicional!</td>
+            </tr>
+        </table>
+        <p>Estas son solo algunas de las ofertas que tenemos para ti. ¡No te pierdas nuestras increibles promociones!</p>
     </body> 
 </html>
