@@ -38,7 +38,6 @@
             -o-transition: opacity 500ms;
             -ms-transition: opacity 500ms;
             transition: opacity 500ms;
-            -ms-grid-column-align: stretch;
         }
 
         img {
@@ -86,16 +85,18 @@
             <td rowspan="2">Batman</td>
             <td HEIGHT="150">Inteligencia, habilidades de detective, habilidades marciales.</td>
             <td rowspan="2">imagenBatman</td>
-            <td rowspan="2"><img src="./Images/gif-batman-11.gif" alt="Superman" width="500"></td>
+            <td rowspan="2"><img alt="Cambiar imagen" height="500" transition:all .5s ease-in-out
+                    onmouseout="this.src= './Images/Batman.jpg';" onmouseover="this.src='./Images/Bruce.jpg';"
+                    src="./Images/Batman.jpg" /></td>
         <tr>
             <td>Alias: El Caballero Oscuro</td>
         </tr>
 
         <tr>
-            <td rowspan="2">Superman</td>
+            <td rowspan="2"><img class="desvanecer" src="./Images/Superman.jpg" alt="Superman" width="500"></td>
             <td HEIGHT="150">Inteligencia, habilidades de detective, habilidades marciales.</td>
             <td rowspan="2">ImagenSuperman</td>
-            <td rowspan="2"><img src="./Images/superman-logo.gif" alt="Superman" width="500"></td>
+            <td rowspan="2">biblioSuperman</td>
         <tr>
             <td>Alias: El Hombre de Acero</td>
         </tr>
@@ -110,7 +111,7 @@
         </tr>
 
         <tr>
-            <td rowspan="2"><img  class="desvanecer" src="./Images/Batman.jpg" alt="Flash" width="500"></td>
+            <td rowspan="2"><img class="desvanecer" src="./Images/Batman.jpg" alt="Flash" width="500"></td>
             <td HEIGHT="150">Velocidad sobrehumana, curbatura del tiempo</td>
             <td rowspan="2">imagen Flash</td>
             <td rowspan="2">biblioFlash</td>
