@@ -1,0 +1,24 @@
+<!ELEMENT ligaPadel (jugadores+, campeonato?, mejorJugador, campeones)>
+<!ELEMENT campeonato (partido)*>
+<!ELEMENT partido EMPTY>
+<!ELEMENT jugadores (jugador*)>
+<!ELEMENT jugador (nombre, edad?, (diestro | zurdo))>
+<!ELEMENT mejorJugador (#PCDATA)>
+<!ELEMENT campeones (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT edad (#PCDATA | anio)*>
+<!ELEMENT anio (#PCDATA)>
+<!ELEMENT diestro EMPTY>
+<!ELEMENT zurdo EMPTY>
+<!ATTLIST jugador apellido (Navarro | Tello | Garrido | Chingotto | DiNenno | Stupazuk | Lebron | Galan) "Navarro"
+                    patrocinador CDATA #IMPLIED
+                    pais CDATA #REQUIRED
+                    circuito CDATA #FIXED "World Padel Tour"
+                    codigo ID #REQUIRED
+                    codigocompañero IDREF #IMPLIED>
+<!ATTLIST partido parejas IDREFS #IMPLIED>
+<!ATTLIST campeones pareja IDREFS #IMPLIED>
+<!ENTITY Navarro "Paquito Navarro">
+<!ENTITY % atributoNombre "nombre CDATA #REQUIRED">
+<!ATTLIST campeonato %atributoNombre;>
+<!ATTLIST partido %atributoNombre;>

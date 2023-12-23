@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ligaPadel SYSTEM "LigaPadel.dtd">
+<ligaPadel>
+	<jugadores>
+		<jugador apellido= "Navarro" patrocinador= "Bullpadel" pais="España" circuito="World Padel Tour" codigo="Nav" codigocompañero="Tel">
+			<nombre>Paquito</nombre>
+			<edad>33
+				<anio>1990</anio>
+			</edad>
+			<diestro />
+		</jugador>
+		<jugador apellido= "Tello" patrocinador= "Nox" pais="Argentina" circuito="World Padel Tour" codigo="Tel" codigocompañero="Nav">
+			<nombre>Juan</nombre>
+			<edad>27</edad>
+			<zurdo />
+		</jugador>
+		<jugador apellido= "DiNenno" patrocinador= "Adidas" pais="Argentina" circuito="World Padel Tour" codigo="Nen" codigocompañero="Stu">
+			<nombre>Martin</nombre>
+			<edad>26
+				<anio>1997</anio>
+			</edad>
+			<diestro />
+		</jugador>
+		<jugador apellido= "Stupazuk" patrocinador= "Siux" pais="Uruguay" circuito="World Padel Tour" codigo="Stu" codigocompañero="Nen">
+			<nombre>Franco</nombre>
+			<edad>28
+				<anio>1995</anio>
+			</edad>
+			<diestro />
+		</jugador>
+	</jugadores>
+	<campeonato nombre="World Padel Málaga"> 
+		<partido nombre ="Final Málaga" parejas="Nav Tel Nen Stu"></partido>
+	</campeonato>
+	<mejorJugador>El mejor jugador del Torneo es &Navarro;</mejorJugador>
+	<campeones pareja="Nav Tel"></campeones>
+</ligaPadel>

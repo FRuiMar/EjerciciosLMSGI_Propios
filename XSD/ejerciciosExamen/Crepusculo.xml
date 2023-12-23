@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<pelicula xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="Crepusculo.xsd">
+  un montón de Vampiros brillantes y hombres lobos sobrehormonados.
+  <personaje nombre = "Bella" />
+  <personaje nombre = "Vampirillo1" />
+  <actor nombre = ""/>f
+</pelicula>

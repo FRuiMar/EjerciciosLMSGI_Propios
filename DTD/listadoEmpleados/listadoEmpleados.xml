@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE empleados SYSTEM "listadoEmpleados.dtd">
+<empleados>
+    <empleado nombre="Francisco" edad="42" antiguedad="7 años" ciudadEmpresa="Málaga" codTrabaj="Fra" codDepar="capt">
+        <apellido>Ruiz</apellido>
+        <departamento>captacion</departamento>
+        <responsable />
+    </empleado>
+    <empleado nombre="Pepe" edad="38" antiguedad="5 años" ciudadEmpresa="Málaga" codTrabaj="Pep" codDepar="capt">
+        <apellido>García</apellido>
+        <departamento>captacion</departamento>
+        <subordinado />
+    </empleado>
+    <empleado nombre="Javier" edad="33" antiguedad="3 años" ciudadEmpresa="Málaga" codTrabaj="Jav" codDepar="vent">
+        <apellido>Perez</apellido>
+        <departamento>ventas</departamento>
+        <responsable />
+    </empleado>
+    <empleado nombre="Susana" edad="35" antiguedad="4 años" ciudadEmpresa="Málaga" codTrabaj="Sus" codDepar="vent">
+        <apellido>Ruiz</apellido>
+        <departamento>ventas</departamento>
+        <responsable />
+    </empleado>
+    <departamentos listado="capt vent"> Los importantes
+        <captacion codDepar="capt"></captacion>
+        <ventas codDepar="vent"></ventas>
+    </departamentos>
+    <empresaMatriz>BBVA &madrid;</empresaMatriz>
+    <clientes>
+        <empresa nombre="Mercadona"/>
+        <director nombre="ElJefe"/>
+    </clientes>
+</empleados>

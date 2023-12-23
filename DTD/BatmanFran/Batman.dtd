@@ -1,0 +1,25 @@
+<!ELEMENT Batman (personajes, batalla*, pelicula+)>
+<!ELEMENT batalla EMPTY>
+<!ELEMENT pelicula EMPTY>
+<!ELEMENT personajes (personaje)+>
+<!ELEMENT personaje (nombreReal, edad?, (heroe | villano))>
+<!ELEMENT nombreReal (#PCDATA)>
+<!ELEMENT edad (#PCDATA | fechaNacimiento)*>
+<!ELEMENT fechaNacimiento (#PCDATA)>
+<!ELEMENT heroe (#PCDATA)>
+<!ELEMENT villano (#PCDATA)>
+<!ATTLIST personaje nombre (batman | robin | joker | pingüino | harley) "batman"  
+                    colorTraje CDATA #IMPLIED
+                    altura CDATA #REQUIRED       
+                    ciudad CDATA #FIXED "Gotham City"
+                    codigo ID #REQUIRED                     
+                    codigoEnemigoPrincipal IDREF #IMPLIED >   <!-- digo que el codigo enemigo es igual a un ID que ya existe (IDREF) y implied dice que ese atributo puede o no aparecer
+                                                                fixed sería que siempre será el mismo ID, required es que es obligatorio que aparezca el codigo, pero puede ser igual 
+                                                                a cualquier id que ya existe, porque hablamos de idref)  --><!-- nombre lo pones en el xml como nombre = y eliges de la lista, poniendo como defecto "batman" -->
+                                                                <!-- indico que CODIGO = LO QUE SEA, que sera el ID, no se puede repetir -->
+<!ATTLIST Batman losMejoresPersonajes IDREFS #REQUIRED>
+
+<!ENTITY nolan "Christopher Nolan">
+<!ENTITY % atributoNombre "nombre CDATA #REQUIRED">     <!-- vamos a usarla para reptir un atributo en varios elementos   "el atributo es NOMBRE de tipo CDATA y obligatorio #REQUIRED -->
+<!ATTLIST batalla %atributoNombre;>    
+<!ATTLIST pelicula %atributoNombre;>    

@@ -1,0 +1,31 @@
+<!ELEMENT videoclub (socios | peliculas | ofertas)* >
+<!ELEMENT socios (socio+)>
+<!ELEMENT socio (DNI, nombreSoc, tlf+)>
+<!ELEMENT DNI ANY>
+<!ELEMENT nombreSoc ANY>
+<!ELEMENT tlf ANY>
+<!ELEMENT peliculas (pelicula+)>
+<!ELEMENT pelicula (nombrePel, anio, director, (alquilada | disponible), novedad?, coste*)>
+<!ELEMENT nombrePel (#PCDATA)>
+<!ELEMENT anio ANY>
+<!ELEMENT director (#PCDATA)>
+<!ELEMENT novedad EMPTY>
+<!ELEMENT alquilada EMPTY>
+<!ELEMENT disponible EMPTY>
+<!ELEMENT coste EMPTY>
+<!ELEMENT ofertas (oferta*)>
+<!ELEMENT oferta (#PCDATA | combo | disponible)*>
+<!ELEMENT combo EMPTY>
+
+<!ATTLIST videoclub  nombre  CDATA #REQUIRED
+                     direccion  CDATA #IMPLIED
+                     telefono  CDATA #FIXED "957505050" >
+<!ATTLIST pelicula codEjem ID #REQUIRED
+                   genero (acción | comedia | romance | terror | drama | SyFy ) "accion">
+<!ATTLIST socio ID ID #REQUIRED>
+<!ATTLIST alquilada ID IDREF #REQUIRED >
+<!ATTLIST combo codEjem IDREFS #IMPLIED>
+<!ENTITY oferLunes "Lunes de MontyPython">
+<!ENTITY oferMierc "Especial DeadPool">
+<!ENTITY % atributoPrecio "precio CDATA #IMPLIED">
+<!ATTLIST coste %atributoPrecio;>

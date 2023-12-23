@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cockteleria [
+<!ELEMENT Cocteleria (cocteles | chupitos | ofertas)*>
+<!ELEMENT cocteles (coctel+)>
+<!ELEMENT coctel (Name, Ingred*, SinAlc?) >
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Ingred ANY>
+<!ELEMENT SinAlc EMPTY>
+<!ELEMENT chupitos (chupito+)>
+<!ELEMENT chupito (shotName, shotIngred*, shotSinAlc?)>
+<!ELEMENT shotName ANY>
+<!ELEMENT shotIngred ANY>
+<!ELEMENT shotSinAlc ANY>
+<!ELEMENT ofertas ANY>
+
+
+]>
+
+<Cocteleria>
+    <cocteles>
+        <coctel>
+            <Name> PIÑA COLADA </Name>
+            <Ingred>
+
+            </Ingred>
+            <SinAlc />
+        </coctel>
+    </cocteles>
+</Cocteleria>

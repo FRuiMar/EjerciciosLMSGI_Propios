@@ -1,0 +1,12 @@
+<!ELEMENT Cocteleria (cocteles | chupitos | ofertas)*>
+<!ELEMENT cocteles (coctel+)>
+<!ELEMENT coctel (Name, Ingred*, SinAlc?) >
+<!ELEMENT Name ANY>
+<!ELEMENT Ingred ANY>
+<!ELEMENT SinAlc EMPTY>
+<!ELEMENT chupitos (chupito+)>
+<!ELEMENT chupito (shotName, shotIngred*, shotSinAlc?)>
+<!ELEMENT shotName ANY>
+<!ELEMENT shotIngred ANY>
+<!ELEMENT shotSinAlc ANY>
+<!ELEMENT ofertas ANY>

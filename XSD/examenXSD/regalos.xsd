@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="tiendas" type="tipoTiendas"/>
+
+  <xs:complexType name="tipoTiendas">
+    <xs:sequence>
+        <xs:element name="tienda" type="tipoTienda" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+
+
+  <xs:complexType name="tipoTienda">
+  <!-- all permite poner todos los elementos  que hay las veces que queramos, 
+   pero siempre siguiend el orden que hemos establecido-->
+    <xs:all>
+        <xs:element name="nombre" type="xs:string"/>
+        <xs:element name="regalos" type="tipoRegalos"/>
+    </xs:all>
+    <xs:attribute name="cif" type="xs:string"/>
+    <xs:attribute name="descuentosAplicables" type="tipoListaPorcentajes"/>
+  </xs:complexType>
+  
+  <xs:complexType name="tipoRegalos">
+    <!-- sequence permite poner todos los elementos que hay las veces que queramos, 
+      pero siempre siguiend el orden que hemos establecido-->
+    <xs:sequence>
+      <xs:element name="regalo" type="tipoRegalo"/>
+      <xs:element name="bombazo" type="tipoBombazo"/>
+    </xs:sequence>
+  </xs:complexType>
+
+
+  <xs:complexType name="tipoBombazo" mixed="true">
+    <xs:sequence>
+      <xs:element name="url" type="tipoUrl"/>
+    </xs:sequence>
+    <xs:attribute name="codigo" type="tipoCodigo"/>
+  </xs:complexType>
+
+  
+  <xs:simpleType name="tipoCodigo">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="(([A-Z]{3}|[a-z]{3})|[1-9]{3})(([A-Z]{3}|[a-z]{3})|[1-9]{3})(([A-Z]{3}|[a-z]{3})|[1-9]{3})"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+
+  <!-- tipoRegalo derivado de tipoBombazo-->
+ 
+  <xs:complexType name="tipoRegalo">
+    <xs:complexContent mixed="true">
+      <xs:extension base="tipoBombazo">
+        <xs:sequence>
+          <xs:element name="marca" type="tipoMarca" />
+        </xs:sequence>
+        <xs:attribute name="precio" type="tipoPrecio"/>
+        <xs:attribute name="iva" type="tipoIVA"/>
+        <xs:attribute name="descuento" type="tipoPorcentaje"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType> 
+
+
+
+  <xs:simpleType name="tipoPrecio">
+  	<xs:restriction base="xs:double">
+  		<xs:minInclusive value="0"/>
+  		<xs:maxInclusive value="10000"/>
+  	</xs:restriction>
+  </xs:simpleType>   
+  
+
+  <xs:simpleType name="tipoIVA">
+  	<xs:restriction base="tipoPrecio">
+  		<xs:minInclusive value="0"/>
+  		<xs:maxInclusive value="50"/>
+  	</xs:restriction>
+  </xs:simpleType>   
+  
+
+  <xs:complexType name="tipoUrl" mixed="true">
+    <xs:simpleContent>
+      <xs:extension base="malditoURL">
+        <xs:attribute name="tipo" type="xs:string" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+
+  <xs:simpleType name="malditoURL">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[http]."/>
+    </xs:restriction>
+  </xs:simpleType>
+
+
+
+  <xs:complexType name="tipoMarca">
+        <!-- choice solo deja poner uno de los elementos que tenemos, 
+          pero las veces que queramos-->
+    <xs:choice>
+      <xs:element name="mattel" type="tipoVacio"/>
+      <xs:element name="giochiPreziosi" type="tipoVacio"/>
+    </xs:choice>
+  </xs:complexType>
+
+  <xs:complexType name="tipoVacio"/> 
+
+
+  <xs:simpleType name="tipoPorcentajeMin">
+  	<xs:restriction base="xs:string">
+  		<xs:enumeration value="10%"/>
+      <xs:enumeration value="15%"/>
+  	</xs:restriction>
+  </xs:simpleType> 
+
+  <xs:simpleType name="tipoPorcentajeMax">
+  	<xs:restriction base="xs:string">
+  		<xs:enumeration value="20%"/>
+      <xs:enumeration value="25%"/>
+  	</xs:restriction>
+  </xs:simpleType> 
+
+  <xs:simpleType name="tipoPorcentaje">
+    <xs:union memberTypes="tipoPorcentajeMin tipoPorcentajeMax"/>
+  </xs:simpleType>
+
+
+  <xs:simpleType name="tipoListaPorcentajes">
+    <xs:list itemType="tipoPorcentaje"></xs:list>
+  </xs:simpleType>
+
+</xs:schema>

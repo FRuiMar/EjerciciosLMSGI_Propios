@@ -1,0 +1,26 @@
+<!ELEMENT empleados (empleado*, departamentos, empresaMatriz, clientes)>
+<!ELEMENT empleado (apellido+, departamento*, (responsable | subordinado)?)>
+<!ELEMENT apellido (#PCDATA)>
+<!ELEMENT departamento (#PCDATA)>
+<!ELEMENT responsable EMPTY>
+<!ELEMENT subordinado EMPTY>
+<!ATTLIST empleado nombre (Francisco | Pepe | Javier | Susana) "Francisco"
+                    edad CDATA #IMPLIED
+                    antiguedad CDATA #REQUIRED
+                    ciudadEmpresa CDATA #FIXED "Málaga"
+                    codTrabaj ID #REQUIRED
+                    codDepar IDREF #IMPLIED>
+<!ELEMENT departamentos (#PCDATA | captacion | ventas)*>
+<!ATTLIST departamentos listado IDREFS #REQUIRED>
+<!ELEMENT captacion (#PCDATA)>
+<!ELEMENT ventas (#PCDATA)>
+<!ATTLIST captacion codDepar ID #REQUIRED>
+<!ATTLIST ventas codDepar ID #REQUIRED>
+<!ELEMENT empresaMatriz (#PCDATA)>
+<!ENTITY madrid "Sucursal Madrid">
+<!ELEMENT clientes (empresa, director)*>
+<!ELEMENT empresa (#PCDATA)>
+<!ELEMENT director (#PCDATA)>
+<!ENTITY % atributoNombre "nombre CDATA #REQUIRED">
+<!ATTLIST empresa %atributoNombre;>
+<!ATTLIST director %atributoNombre;>

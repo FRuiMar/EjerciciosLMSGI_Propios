@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="piezasCoche" type="datospiezasCoche"/>
+
+  <xs:complexType name="datospiezasCoche">
+    <xs:all>
+      <xs:element name="coche" type="datosCoche"></xs:element>
+      <xs:element name="piezas" type="datosPiezas"></xs:element>
+      <xs:element name="disponibildad" type="datosDisponibilidad"></xs:element>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="datosCoche">
+    <xs:attribute name="marca" type="xs:string" maxOccurs="unbounded"/>
+    <xs:attribute name="modelo" type="xs:string" maxOccurs="unbounded"/>
+    <xs:attribute name="anioConstruccion" type="xs:integer" maxOccurs="unbounded"/>
+  </xs:complexType>
+
+
+  <xs:complexType name="datosPiezas">
+    <xs:attribute name="motor" type="modeloMotor"/>
+    <xs:attribute name="materialDeChasis" type="tipoMaterial"/>
+    <xs:attribute name="asientos" type="datosAsientos"/>
+    <xs:attribute name="tapiceria" type="datosTapiceria"/>
+  </xs:complexType>
+
+  <xs:simpleType name="modeloMotor">
+    
+  </xs:simpleType>
+
+
+  <xs:complexType name="datosDisponibilidad"> </xs:complexType> 
+</xs:schema>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE videoclub SYSTEM "Videoclub.dtd">
+ 
+<videoclub nombre = "Electronic" direccion = "calle meson 8" telefono = "957505050" >
+  <socios>
+    <socio ID = "e0473">
+      <DNI>50600700x</DNI>
+      <nombreSoc>Pepe Gutierrez</nombreSoc>
+      <tlf>+34 555 555624248</tlf>
+    </socio>
+    <socio ID = "e0097">
+      <DNI>40300100y</DNI>
+      <nombreSoc>Javier Gómez</nombreSoc>
+      <tlf>+34 555 555997983</tlf>
+    </socio>
+  </socios>
+  <peliculas>
+    <pelicula codEjem = "EP003" genero = "drama">
+      <nombrePel>El Padrino</nombrePel>
+      <anio>1972</anio>
+      <director>Francis Ford Coppola</director>
+      <alquilada ID = "e0473" />
+      <coste precio="4€/día"/>
+    </pelicula>
+  </peliculas>
+  <peliculas>
+    <pelicula codEjem = "VB001" genero = "comedia">
+      <nombrePel>La Vida de Brian</nombrePel>
+      <anio>1979</anio>
+      <director>Terry Jones</director>
+      <disponible/>
+      <coste precio="4€/día"/>
+    </pelicula>
+    <pelicula codEjem = "VB002" genero = "comedia">
+      <nombrePel>La Vida de Brian</nombrePel>
+      <anio>1979</anio>
+      <director>Terry Jones</director>
+      <alquilada ID = "e0097" />
+      <coste precio="4€/día"/>
+    </pelicula>
+    <pelicula codEjem = "CM002" genero = "acción">
+      <nombrePel>Los Caballeros de la Mesa Cuadrada</nombrePel>
+      <anio>1975</anio>
+      <director>Terry Jones, Terry Gilliam</director>
+      <disponible/>
+      <coste precio="4€/día"/>
+    </pelicula>
+    <pelicula codEjem = "DP104" genero = "acción">
+      <nombrePel>Deadpool 1</nombrePel>
+      <anio>2018</anio>
+      <director>David Leitch</director>
+      <disponible/>
+      <novedad />
+      <coste precio="4€/día"/>
+    </pelicula>
+    <pelicula codEjem = "DP201" genero = "acción">
+      <nombrePel>Deadpool 2</nombrePel>
+      <anio>2018</anio>
+      <director>David Leitch</director>
+      <disponible/>
+      <novedad />
+      <coste precio="4€/día"/>
+    </pelicula>
+  </peliculas>
+  <ofertas>
+    <oferta>
+      2x1 &oferLunes;
+      <combo codEjem = "VB001 CM002"/>
+      <disponible/>
+    </oferta>
+    <oferta>
+      Mitad de precio, Doble de tortas &oferMierc;
+      <combo codEjem = "DP104 DP201"/>
+    </oferta>
+  </ofertas>
+</videoclub>

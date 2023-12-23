@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="pelicula" type="tipoPelicula"/>
+
+  <xs:complexType name="tipoPelicula" mixed="true">
+    <xs:sequence>
+      <xs:element name = "personaje" type = "datosPersonaje"/>
+      <xs:element name = "actor" type = "datosActor"/>
+    </xs:sequence>
+  </xs:complexType>  
+
+  <xs:complexType name="datosPersonaje"></xs:complexType>
+
+  <xs:complexType name="datosActor"></xs:complexType>
+
+
+
+
+</xs:schema>
