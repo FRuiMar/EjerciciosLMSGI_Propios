@@ -1,0 +1,42 @@
+      body {
+          margin: 50px;
+          padding: 0px;
+          background: #757d89;
+          font-family: 'Open Sans', sans-serif;
+          font-size: 11pt;
+          color: #493030;
+          text-align: center;
+      }
+
+      * {
+          box-sizing: border-box;
+      }
+
+
+      /* Header/Logo Title */
+      .header {
+          padding: 60px;
+          text-align: center;
+          background: #1abc9c;
+          color: white;
+          font-size: 30px;
+      }
+
+
+
+      /* Create four equal columns that floats next to each other */
+      .column {
+          float: left;
+          width: 16.66%;
+          padding: 10px;
+          height: 300px;
+          /* Should be removed. Only for demonstration */
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+          /*clase*/
+          content: "";
+          display: table;
+          clear: both;
+      }
