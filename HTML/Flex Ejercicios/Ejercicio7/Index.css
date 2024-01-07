@@ -6,11 +6,14 @@ body{
 /* Contenedor principal. Tendrá Flexbox */
 .container {
     display: flex; /* flex es igual a inline-flex. Los elementos dentro de un flex son flex-items */
-
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
     border: 10px solid red;
-    
     box-sizing: border-box; /* Unifica en un único valor de cada div los siguientes: margin, padding y border*/ 
 }  
+
 
 /* Cada box tiene unas propiedades, son simplemente estéticas*/ 
 .box {
@@ -19,8 +22,8 @@ body{
   text-align: center;
   text-shadow: 4px 4px 0 rgba(0, 0, 0, .1);
   padding: 10px;
-  flex: 1;         /* FRAN.. AQUÍ  --- LE DA A CADA DIV EL VALOR 1 
-                PARA QUE OCUPEN LO MISMO*/
+  width: 33.33%;
+  box-sizing: border-box;
 }
 
 /* Colores de cada box */
@@ -28,8 +31,8 @@ body{
 .box2 { background:#3498db;}
 .box3 { background:#9b59b6;}
 .box4 { background:#34495e;}
-.box5 { background:#f1c40f; order: -1;}
-.box6 { background:#e67e22; order: 1;} 
+.box5 { background:#f1c40f;}
+.box6 { background:#e67e22;} 
 .box7 { background:#e74c3c;}
 .box8 { background:#bdc3c7;}
 .box9 { background:#2ecc71;}

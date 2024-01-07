@@ -6,10 +6,9 @@ body{
 /* Contenedor principal. Tendrá Flexbox */
 .container {
     display: flex; /* flex es igual a inline-flex. Los elementos dentro de un flex son flex-items */
-    flex-direction: row;          /* FRAN.. AQUÍ*/
     flex-wrap: wrap;              /* FRAN.. AQUÍ*/
+    height: 100vh;
     border: 10px solid red;
-    justify-content: left;
     box-sizing: border-box; /* Unifica en un único valor de cada div los siguientes: margin, padding y border*/ 
 }  
 
@@ -20,8 +19,8 @@ body{
     text-align: center;
     text-shadow: 4px 4px 0 rgba(0, 0, 0, .1);
     padding: 10px;
-    flex:0, 0, 30%; /* Ocupará el 30% del ancho del contenedor y puede crecer, pero no encoger */
-    box-sizing: border-box; /* Para incluir padding y border en el ancho del elemento */
+    box-sizing: border-box;
+    width: 33.33%;   
 }
 
 

@@ -9,7 +9,6 @@ body{
     flex-direction:column-reverse;
     overflow-x: auto;
     border: 10px solid red;
-    height: 100vh; /* Utiliza el 100% del alto del viewport (parte visible de la página) */ 
     box-sizing: border-box; /* Unifica en un único valor de cada div los siguientes: margin, padding y border*/ 
 }  
 
