@@ -1,0 +1,32 @@
+$width: 100px;
+$padding-img: 5px;
+
+@mixin discountCode {
+    color: green;
+}
+
+@mixin textoNegritaApartados{
+    font-weight: bold;
+    color: black;
+}
+
+@mixin tuCarrito{
+    color: grey;
+}
+
+.textoApartado{
+    @include textoNegritaApartados;
+}
+
+.carrito{
+    @include tuCarrito;
+}
+
+.descuento{
+    @include discountCode;
+}
+
+img{
+    width: $width;
+    padding: $padding-img;
+}
