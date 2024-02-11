@@ -1,0 +1,37 @@
+/* Importation*/
+/* Define mixin with one argument */
+/* Define standard variables and values for website */
+/* Use the variables */
+.colorHeadMain {
+  color: #0e0e0e;
+}
+
+#headingCart {
+  color: #7a7a7a;
+}
+
+#btnCheckout {
+  background-color: #0d6efd;
+  color: white;
+}
+
+#btnCheckout:hover {
+  background-color: #0c5dd6;
+}
+
+.promoCode {
+  color: #198754;
+}
+
+#divBody {
+  font-size: 1.05rem;
+  background-color: #fafafa;
+  color: #0e0e0e;
+}
+
+img {
+  width: 100px;
+  height: auto;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,46 @@
+@import "_colors.scss";
+
+$width: 100px;
+$padding-img: 5px;
+
+img{
+    width: $width;
+    padding: $padding-img;
+}
+
+#checkoutButton{
+    background-color: $color-checkout;
+}
+
+#checkoutButton:hover{
+    background-color: #0b5ed7;
+}
+
+@mixin discountCode($color-discount) {
+    color: $color-discount;
+}
+
+@mixin textoNegritaApartados($color-texto) {
+    font-weight: bold;
+    color: $color-texto;
+}
+
+@mixin tuCarrito($color-carrito){
+    color: $color-carrito;
+}
+
+.textoApartado{
+    @include textoNegritaApartados(black);
+}
+
+.carrito{
+    @include tuCarrito(grey);
+}
+
+.descuento{
+    @include discountCode(green);
+}
+
+#body{
+    background-color: $color-bg-pagina;
+}

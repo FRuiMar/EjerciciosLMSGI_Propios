@@ -1,0 +1,44 @@
+/* Importation*/
+@import "colors";
+
+/* Define mixin with one argument */
+@mixin heading($color) {
+  color: $color;
+}
+
+/* Define standard variables and values for website */
+$myFontSize: 1.05rem;
+
+/* Use the variables */
+.colorHeadMain {  // Billing and Payment headings
+  @include heading($myBlackColor);
+}
+
+#headingCart {  // Cart heading
+  @include heading($myGrayColor);
+}
+
+#btnCheckout {  //Checkout Button
+  background-color: $myBlueColor;
+  color: white;
+}
+
+#btnCheckout:hover {
+  background-color: #0c5dd6;
+}
+
+.promoCode {
+  color: $myGreenColor;
+}
+
+#divBody {
+  font-size: $myFontSize;
+  background-color: $bg-color;
+  color: $myBlackColor;
+}
+
+img {
+  width: 100px;
+  height: auto;
+}
+

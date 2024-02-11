@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Francisco Manuel Hern&aacute;ndez">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://kit.fontawesome.com/bf0199f4cf.js" crossorigin="anonymous"></script>
+        <title>Index | El Mundo Today</title>
+        <style>
+            @media (max-width: 768px) {
+                #fontMainNew {
+                    font-size: 1.5rem;
+                }
+            }            
+            .rrssHover i:hover {
+                color: rgb(240, 116, 0);
+            }
+            #subTitle {
+                background-color: rgb(226, 109, 0);
+                font-weight: bold;
+                font-size: 0.9rem;
+                color: white;
+                padding-top: 0.2em;
+                padding-bottom: 0.2em;
+            }
+            .navBarHover a:hover {
+                color: rgb(240, 116, 0);
+            }
+            #btnSuscrip {
+                background-color: aquamarine;
+                font-weight: bold;
+            }
+            #btnSuscrip:hover {
+                background-color: black;
+                color: white;
+            }
+            .titleNews {
+                font-size: 2.3rem;
+                color: black;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: bold;
+                text-decoration: none;
+            }
+            .sNewText:hover {
+                color: rgb(240, 116, 0);
+            }
+            .contenedor-noticias {
+                background-color: lightgray;
+                padding: 20px;
+                border-radius: 10px;
+                margin-bottom: 20px;
+            }
+            .enlaceCategoria {
+                background-color: turquoise;
+                color: white;
+            }
+            #loginFooter * {
+                color: aqua;
+            }
+            #loginFooter a:hover {
+                color:rgb(240, 116, 0);
+            }
+            #rrssFooter a {
+                color: rgb(255, 106, 0);
+                font-size: 1.7rem;
+                margin-left: 1em;
+                margin-right: 1em;
+            }
+            #rrssFooter a:hover {
+                transition: 0.2s;
+                color: black;
+            }
+            #btnFooter {
+                color: white;
+                background-color: rgb(255, 106, 0);
+                border-radius: 0;
+                padding-left: 1.5em;
+                padding-right: 1.5em;
+            }
+            #btnFooter:hover {
+                transition: 0.3s;
+                background-color: black;
+            }
+            #listFooter {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                font-size: 0.8rem;
+            }
+            #listFooter li:first-child {
+                list-style-type: none;
+            }
+            #listFooter a {
+                color: whitesmoke;
+            }
+            #listFooter a:hover {
+                color: silver;
+            }
+            #copyright {
+                color: white;
+                font-size: 0.7rem;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <!--Header-->
+        <div class="container-fluid">
+            <div class="row align-items-center mt-2">
+                <!--Iconos RRSS-->
+                <div class="col d-none d-md-block text-end rrssHover">
+                    <a href="./Index.html" class="text-decoration-none text-black me-4">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="./Index.html" class="text-decoration-none text-black me-4">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="./Index.html" class="text-decoration-none text-black me-4">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <a href="./Index.html" class="text-decoration-none text-black me-4">
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+                    <a href="./Index.html" class="text-decoration-none text-black me-4">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    <a href="./Index.html" class="text-decoration-none text-black me-4">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="./Index.html" class="text-decoration-none text-black me-5">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+                <!--Banner-->
+                <div class="col-5 col-lg-4 mx-3">
+                    <a href="./Index.html">
+                        <img class="w-100" alt="Imagen de El Mundo Today" src="./resources/images/logo-elmundotoday2.png">
+                    </a>
+                </div>
+                <!--Links Login/SignUp-->
+                <div class="col d-flex flex-row align-items-center">
+                    <div class="ms-5 d-none d-md-block">
+                        <a href="./Index.html" 
+                        class="text-decoration-none text-black fw-bold">Iniciar Sesión</a>
+                    </div>
+                    <div class="ms-4">
+                        <a href="./Register.html">
+                            <button type="button"
+                            id="btnSuscrip" class="btn">Hazte suscriptor</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--Header Linea Naranja-->
+            <div class="row d-none d-md-block mt-3">
+                <div id="subTitle" class="col text-uppercase text-center">
+                    <p class="mb-0">- la actualidad del mañana -</p>
+                </div>
+            </div>
+        </div>
+
+        <!--Navigation Bar-->
+        <nav class="navbar sticky-top bg-white navbar-expand-md border-bottom border-black">
+            <!--ps (padding start) and pe (padding end)-->
+            <div class="container-fluid ps-5 pe-5">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+                    <!--Enlances NavBar-->
+                    <ul class="navbar-nav text-black navBarHover">
+                        <li class="nav-item me-4">
+                            <a class="nav-link" href="#">Internacional</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link" href="#">España</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link" href="#">Cultura</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link" href="#">Sociedad</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link" href="#">Ciencia y Tecnología</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link" href="#">Gente</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link" href="#">Deportes</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link" href="#">Oktoday</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link" href="#">Vídeos</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link" href="#">Tienda</a>
+                        </li>
+                    </ul>
+                    <!--Icono Búsqueda-->
+                    <a href="#" class="d-none d-md-block text-black ms-5">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!--Main Body-->
+        <div class="container">
+            <div class="row my-3">
+                <!--News-->
+                <div class="col-md-8">
+                    <div class="container">
+                        <!--Main New-->
+                        <div class="row">
+                            <div class="col">
+                                <!--Imagen-->
+                                <div>
+                                    <a href="#">
+                                        <img class="img-fluid" 
+                                        alt="Imagen de un gato mirando" src="./resources/images/cat.jpg">
+                                    </a>
+                                </div>
+                                <!--Titulo-->
+                                <div class="border-bottom border-black pb-2">
+                                    <a id="fontMainNew" class="titleNews" href="#">
+                                        Investigadores descubren que los gatos están 
+                                        planeando conquistar el mundo utilizando memes 
+                                        como estrategia principal.
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Secondary News-->
+                        <div class="row my-5">
+                            <div class="col-md-6 mb-3">
+                                <!--Imagen-->
+                                <div>
+                                    <a href="#">
+                                        <img class="img-fluid" 
+                                        alt="Imagen de productos de chocolate" src="./resources/images/chocolate.jpg">
+                                    </a>
+                                </div>
+                                <!--Titulo-->
+                                <div>
+                                    <a class="titleNews fs-4 sNewText" href="#">
+                                        Investigadores descubren que el chocolate puede 
+                                        hacerte más inteligente, pero solo si lo comes 
+                                        mientras resuelves ecuaciones matemáticas difíciles.
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <!--Imagen-->
+                                <div>
+                                    <a href="#">
+                                        <img class="img-fluid" 
+                                        alt="Imagen de un perro" src="./resources/images/dog.jpg">
+                                    </a>
+                                </div>
+                                <!--Titulo-->
+                                <div>
+                                    <a class="titleNews fs-4 sNewText" href="#">
+                                        Científicos crean dispositivo que traduce ladridos 
+                                        de perros y descubren que la mayoría de las 
+                                        conversaciones caninas son sobre comida y siestas.
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Other News-->
+                        <div class="row mt-5 border-bottom">
+                            <div class="col-md-3 mb-3">
+                                <!--Imagen-->
+                                <a href="#">
+                                    <img class="img-fluid" 
+                                    alt="Imagen de un aguacate" src="./resources/images/aguacate.jpg">
+                                </a>
+                            </div>
+                                <!--Titulo-->
+                            <div class="col-md-9">
+                                <a class="text-decoration-none enlaceCategoria" href="#">Ciencia y Tecnología</a><br>
+                                <a class="titleNews fs-4 sNewText" href="#">
+                                    Nuevo estudio revela que los aguacates 
+                                    son en realidad extraterrestres que vinieron 
+                                    a la Tierra para llevarnos a una era de 
+                                    guacamole intergaláctico.
+                                </a>
+                            </div>                            
+                        </div>
+                        <div class="row my-4">
+                            <div class="col-md-3 mb-3">
+                                <!--Imagen-->
+                                <a href="#">
+                                    <img class="img-fluid" 
+                                    alt="Imagen de un repartidor de pizzas" src="./resources/images/repartidor.jpg">
+                                </a>
+                            </div>
+                                <!--Titulo-->
+                            <div class="col-md-9">
+                                <a class="text-decoration-none enlaceCategoria" href="#">Sociedad</a><br>
+                                <a class="titleNews fs-4 sNewText" href="#">
+                                    El servicio de entrega de pizzas implementa 
+                                    drones vestidos como superhéroes para agilizar 
+                                    las entregas y combatir el hambre en la ciudad.
+                                </a>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+                <!--Columna News-->
+                <div class="col-md-4">
+                    <div class="container">
+                        <!--Boletin-->
+                        <div class="row">
+                            <div class="col mb-5">
+                                <img class="img-fluid" src="./resources/images/boletin.png">
+                            </div>
+                        </div>
+                    </div>
+                    <!--Noticias Columna-->
+                    <div class="container contenedor-noticias">
+                        <div class="row">
+                            <div class="col">
+                                <!--Imagen-->
+                                <div>
+                                    <a href="#">
+                                        <img class="img-fluid" 
+                                        alt="Imagen de noruegos celebrando en la calle" src="./resources/images/people.jpg">
+                                    </a>
+                                </div>
+                                <!--Titulo-->
+                                <div>
+                                    <a class="titleNews fs-4 sNewText" href="#">
+                                        El presidente de Noruega declara 
+                                        día festivo nacional para celebrar la existencia 
+                                        de unicornios en sus bosques.
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col">
+                                <!--Imagen-->
+                                <div>
+                                    <a href="#">
+                                        <img class="img-fluid" 
+                                        alt="Imagen de una persona mirando 
+                                        a trav&eacute;s de un telescopio" src="./resources/images/telescopio.jpg">
+                                    </a>
+                                </div>
+                                <!--Titulo-->
+                                <div>
+                                    <a class="titleNews fs-4 sNewText" href="#">
+                                        Astrónomos encuentran un nuevo planeta 
+                                        habitable donde los habitantes se comunican 
+                                        exclusivamente a través de memes.
+                                    </a>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <div class="container-fluid bg-dark">
+            <!--Iniciar sesión-->
+            <div class="row">
+                <div class="col text-center my-4">
+                    <div id="loginFooter">
+                        <a href="./Index.html" class="text-decoration-none">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                        <a href="./Index.html" 
+                        class="text-decoration-none text-uppercase">iniciar sesión</a>    
+                    </div>
+                </div>
+            </div>
+            <!--RRSS Footer-->
+            <div class="row">
+                <div class="col d-flex justify-content-center" id="rrssFooter">
+                    <a href="./Index.html" class="text-decoration-none">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="./Index.html" class="text-decoration-none">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="./Index.html" class="text-decoration-none">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <a href="./Index.html" class="text-decoration-none">
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+                    <a href="./Index.html" class="text-decoration-none">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    <a href="./Index.html" class="text-decoration-none">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="./Index.html" class="text-decoration-none">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <!--Imagen Footer-->
+            <div class="row justify-content-center">
+                <div class="col-4 col-md-3 my-5">
+                    <a href="./Index.html">
+                        <img class="img-fluid" alt="Imagen de El Mundo Today" src="./resources/images/logoFooter.png">
+                    </a>
+                </div>
+            </div>
+            <!--Subscribe button-->
+            <div class="row">
+                <div class="col text-center mb-4">
+                    <a href="./Register.html">
+                        <button type="button" id="btnFooter" 
+                        class="btn fs-5">Suscríbete</button>
+                    </a>
+                </div>
+            </div>
+            <!--Enlaces Footer-->
+            <div class="row">
+                <div class="col mb-3">
+                    <ul id="listFooter" class="text-uppercase text-white">
+                        <li class="mx-3">
+                            <a href="#" class="text-decoration-none" data-bs-toggle="tooltip" 
+                            title="Política de cookies">Política de cookies</a>
+                        </li>
+                        <li class="mx-3">
+                            <a href="#" class="text-decoration-none" data-bs-toggle="tooltip" 
+                            title="Aviso Legal y Política de Privacidad">Aviso Legal y Política de Privacidad</a>
+                        </li>
+                        <li class="mx-3">
+                            <a href="#" class="text-decoration-none" data-bs-toggle="tooltip" 
+                            title="Contacto y Publicidad">Contacto y Publicidad</a>
+                        </li>
+                        <li class="mx-3">
+                            <a href="#" class="text-decoration-none" data-bs-toggle="tooltip" 
+                            title="Tienda">tienda</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--Copyright-->
+            <div class="row">
+                <div class="col mb-3">
+                    <p id="copyright">
+                        &copy; EL MUNDO TODAY
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

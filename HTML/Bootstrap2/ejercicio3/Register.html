@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Francisco Manuel Hern&aacute;ndez">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://kit.fontawesome.com/bf0199f4cf.js" crossorigin="anonymous"></script>
+        <title>Register | El Mundo Today</title>
+        <style>
+            #loginFooter * {
+                color: aqua;
+            }
+            #loginFooter a:hover {
+                color:rgb(240, 116, 0);
+            }
+            #rrssFooter a {
+                color: rgb(255, 106, 0);
+                font-size: 1.7rem;
+                margin-left: 1em;
+                margin-right: 1em;
+            }
+            #rrssFooter a:hover {
+                transition: 0.2s;
+                color: black;
+            }
+            #btnFooter {
+                color: white;
+                background-color: rgb(255, 106, 0);
+                border-radius: 0;
+                padding-left: 1.5em;
+                padding-right: 1.5em;
+            }
+            #btnFooter:hover {
+                transition: 0.3s;
+                background-color: black;
+            }
+            #listFooter {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                font-size: 0.8rem;
+            }
+            #listFooter li:first-child {
+                list-style-type: none;
+            }
+            #listFooter a {
+                color: whitesmoke;
+            }
+            #listFooter a:hover {
+                color: silver;
+            }
+            #copyright {
+                color: white;
+                font-size: 0.7rem;
+                text-align: center;
+            }
+            .headerCSS {
+                background-color: rgb(255, 106, 0);
+                color: white;
+            }
+            .linkRegister {
+                color: rgb(255, 106, 0);
+                font-style: italic;
+                font-weight: normal;
+                font-size: 0.9rem;
+            }
+            #sendBtn {
+                background-color: black;
+                color: white;
+            }
+            #sendBtn:hover {
+                background-color: rgb(255, 106, 0);
+                transition: 0.4s;
+            }
+        </style>
+    </head>
+    <body>
+        <!--Header-->
+        <div class="container-fluid headerCSS">
+            <div class="row">
+                <div class="col my-5">
+                    <!--Imagen-->
+                    <div class="text-center mt-5 mb-4">
+                        <img src="./resources/images/imgRegister.png">
+                    </div>
+                    <!--Headings-->
+                    <div class="text-center mb-4">
+                        <h1 class="fw-bold ">Tú haces posible la Verdad.</h1>
+                        <p class="fs-5">
+                            Solo necesitamos unos cuantos datos 
+                            antes de darte la bienvenida a la comunidad.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--Div Main-->
+        <div class="container">
+            <!--Register Form-->
+            <div class="row justify-content-center">
+                <div class="col-md-7 mt-5 mb-4 border-bottom border-black">
+                    <div class="mb-3">
+                        <h2>
+                            <span style="font-weight: normal; font-size: 1.7rem;">Información de la cuenta</span>
+                            <span class="linkRegister text-black">¿Ya tienes una cuenta?</span>
+                            <a href="#" class="linkRegister text-decoration-none">Accede aquí</a>
+                        </h2>
+                    </div>
+                    <form action="#" class="was-validated">
+                        <div class="row">
+                            <div class="col mb-3">
+                                <label class="fw-bold" for="username">Nombre de usuario</label>
+                                <input type="text" class="form-control mt-1" required 
+                                id="username" name="username">
+                                <div class="valid-feedback">Válido.</div>
+                                <div class="invalid-feedback">Rellene este campo.</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col mb-3">
+                                <label class="fw-bold" for="password">Contraseña</label>
+                                <input type="password" class="form-control mt-1" required 
+                                id="password" name="password">
+                                <div class="valid-feedback">Válido.</div>
+                                <div class="invalid-feedback">Rellene este campo.</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col mb-3">
+                                <label class="fw-bold" for="passwordValidate">Confirma tu contraseña</label>
+                                <input type="password" class="form-control mt-1" required 
+                                id="passwordValidate" name="passwordValidate">
+                                <div class="valid-feedback">Válido.</div>
+                                <div class="invalid-feedback">Rellene este campo.</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col mb-3">
+                                <label class="fw-bold" for="email">Dirección de correo electrónico</label>
+                                <input type="email" class="form-control mt-1" required 
+                                id="email" name="email">
+                                <div class="valid-feedback">Válido.</div>
+                                <div class="invalid-feedback">Rellene este campo.</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col mb-3">
+                                <label class="fw-bold" for="emailValidate">Confirmar la dirección de correo electrónico</label>
+                                <input type="email" class="form-control mt-1" required 
+                                id="emailValidate" name="emailValidate">
+                                <div class="valid-feedback">Válido.</div>
+                                <div class="invalid-feedback">Rellene este campo.</div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!--Pay Method-->
+            <div class="row justify-content-center">
+                <div class="col-md-7 mb-3">
+                    <div class="mb-3">
+                        <h2>
+                            <span style="font-weight: normal; font-size: 1.5rem;">
+                                Elige el método de pago
+                            </span>
+                        </h2>
+                    </div>
+                    <!--Radio Btns-->
+                    <form action="/action_page.php">
+                        <div class="form-check form-check-inline me-5">
+                            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>
+                            <label class="form-check-label" for="radio1">
+                                <span style="color: rgb(255, 106, 0);">Pago con tarjeta de crédito</span>
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
+                            <label class="form-check-label" for="radio2">
+                                <span style="color: rgb(255, 106, 0);">Pago con Paypal</span>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>  
+
+            <!--Pay Form-->
+            <div class="row justify-content-center">
+                <div class="col-md-7 mb-4 py-5 px-4 bg-light">
+                    <div class="mb-4">
+                        <h2>
+                            <span style="font-weight: normal; font-size: 1.7rem;">Información de pago</span>
+                            <span style="font-style: italic; font-weight: normal; font-size: 0.9rem;">Aceptamos las principales tarjetas de crédito</span>
+                        </h2>
+                    </div> 
+                    <form action="#">
+                        <div class="row">
+                            <div class="col mb-3">
+                                <label class="fw-bold" for="numCard">Número de la tarjeta</label>
+                                <input type="number" class="form-control mt-1" required 
+                                id="numCard" placeholder="1234 1234 1234 1234" name="numCard">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="fw-bold" for="date">Fecha de caducidad</label>
+                                <input type="text" class="form-control mt-1" required 
+                                id="date" placeholder="MM / AA" name="date">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="fw-bold" for="cvc">CVC</label>
+                                <input type="number" class="form-control mt-1" required 
+                                id="cvc" placeholder="CVC" name="cvc">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label class="fw-bold" for="dc">Código de descuento</label>
+                                <input type="text" class="form-control mt-1" 
+                                id="dc" name="dc">
+                            </div>
+                            <div class="col ps-0 d-flex justify-content-start align-items-end">
+                                <button type="button" 
+                                class="btn btn-link text-black">Aplicar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!--Mail-->
+            <div class="row justify-content-center">
+                <div class="col-md-7 border-top border-bottom border-black">
+                    <div class="my-4">
+                        <h2>
+                            <span style="font-weight: normal; font-size: 1.7rem;">
+                                Join our mailing list.
+                            </span>
+                        </h2>
+                    </div>
+                    <!--CheckBox--> 
+                    <form action="#">
+                        <div class="form-check mb-3">
+                            <input type="checkbox" class="form-check-input" id="mailingCheck" name="mailingCheck" value="something">
+                            <label class="form-check-label" for="mailingCheck">
+                                <span style="font-weight: bold;">Newsletters exclusivas de El Mundo Today</span>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!--Send/Pay-->
+            <div class="row justify-content-center">
+                <div class="col-md-7 mt-2 mb-5">
+                    <a href="#">
+                        <button type="button" id="sendBtn" 
+                        class="btn fs-5 p-3">Enviar y pagar</button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!--Footer-->
+        <div class="container-fluid bg-dark">
+            <!--Iniciar sesión-->
+            <div class="row">
+                <div class="col text-center my-4">
+                    <div id="loginFooter">
+                        <a href="./Index.html" class="text-decoration-none">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                        <a href="./Index.html" 
+                        class="text-decoration-none text-uppercase">iniciar sesión</a>    
+                    </div>
+                </div>
+            </div>
+            <!--RRSS Footer-->
+            <div class="row">
+                <div class="col d-flex justify-content-center" id="rrssFooter">
+                    <a href="./Index.html" class="text-decoration-none">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="./Index.html" class="text-decoration-none">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="./Index.html" class="text-decoration-none">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <a href="./Index.html" class="text-decoration-none">
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+                    <a href="./Index.html" class="text-decoration-none">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    <a href="./Index.html" class="text-decoration-none">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="./Index.html" class="text-decoration-none">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <!--Imagen Footer-->
+            <div class="row justify-content-center">
+                <div class="col-4 col-md-3 my-5">
+                    <a href="./Index.html">
+                        <img class="img-fluid" alt="Imagen de El Mundo Today" src="./resources/images/logoFooter.png">
+                    </a>
+                </div>
+            </div>
+            <!--Subscribe button-->
+            <div class="row">
+                <div class="col text-center mb-4">
+                    <a href="./Register.html">
+                        <button type="button" id="btnFooter" 
+                        class="btn fs-5">Suscríbete</button>
+                    </a>
+                </div>
+            </div>
+            <!--Enlaces Footer-->
+            <div class="row">
+                <div class="col mb-3">
+                    <ul id="listFooter" class="text-uppercase text-white">
+                        <li class="mx-3">
+                            <a href="#" class="text-decoration-none" data-bs-toggle="tooltip" 
+                            title="Política de cookies">Política de cookies</a>
+                        </li>
+                        <li class="mx-3">
+                            <a href="#" class="text-decoration-none" data-bs-toggle="tooltip" 
+                            title="Aviso Legal y Política de Privacidad">Aviso Legal y Política de Privacidad</a>
+                        </li>
+                        <li class="mx-3">
+                            <a href="#" class="text-decoration-none" data-bs-toggle="tooltip" 
+                            title="Contacto y Publicidad">Contacto y Publicidad</a>
+                        </li>
+                        <li class="mx-3">
+                            <a href="#" class="text-decoration-none" data-bs-toggle="tooltip" 
+                            title="Tienda">tienda</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--Copyright-->
+            <div class="row">
+                <div class="col mb-3">
+                    <p id="copyright">
+                        &copy; EL MUNDO TODAY
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

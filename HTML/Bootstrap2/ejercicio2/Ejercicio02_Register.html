@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Francisco Manuel Hern&aacute;ndez">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <title>Ejercicio 02 - Register</title>
+        <style>
+            @media (min-height: 960px) {
+              .fixed-bottom-on-large-screen {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+              }
+            }
+        </style>
+    </head>
+    <body class="bg-primary">
+
+        <!--Div Main-->
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-md-6 mt-5">
+                    <div class="card">
+                        <div class="card-header text-center display-6 fs-2 py-5">Create Account</div>
+                        <div class="card-body">
+                            <form action="#" class="was-validated">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="firstName">First name</label>
+                                        <input type="text" class="form-control mt-1" required 
+                                        id="firstName" placeholder="Enter first name" name="firstName">
+                                        <div class="valid-feedback">Valid.</div>
+                                        <div class="invalid-feedback">Please fill out this field.</div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="lastName">Last name</label>
+                                        <input type="text" class="form-control mt-1" required 
+                                        id="lastName" placeholder="Enter last name" name="lastName">
+                                        <div class="valid-feedback">Valid.</div>
+                                        <div class="invalid-feedback">Please fill out this field.</div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col mb-3">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control mt-1" required 
+                                        id="email" placeholder="Enter email address" name="email">
+                                        <div class="valid-feedback">Valid.</div>
+                                        <div class="invalid-feedback">Please fill out this field.</div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="pwd">Password</label>
+                                        <input type="password" class="form-control mt-1" required 
+                                        id="pwd" placeholder="Enter password" name="pwd">
+                                        <div class="valid-feedback">Valid.</div>
+                                        <div class="invalid-feedback">Please fill out this field.</div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="confPwd">Confirm Password</label>
+                                        <input type="password" class="form-control mt-1" required 
+                                        id="confPwd" placeholder="Confirm Password" name="confPwd">
+                                        <div class="valid-feedback">Valid.</div>
+                                        <div class="invalid-feedback">Please fill out this field.</div>
+                                    </div>
+                                </div>
+                                <div class="row mt-4 mb-2">
+                                    <div class="col">
+                                        <a href="#" class="btn btn-primary w-100 fs-5">Create Account</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div> 
+                        <div class="card-footer">
+                            <div class="row">
+                                <div class="col text-center py-2">
+                                    <a href="./Ejercicio02_Login.html" class="text-decoration-none" data-bs-toggle="tooltip" 
+                                    title="Go to login">Have an account? Go to login</a>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Div Footer-->
+        <div class="container-fluid mt-5 fixed-bottom-on-large-screen">
+            <div class="row bg-light p-3">
+                <div class="col-md-6 text-md-start text-center">
+                    <p class="my-2 text-black-50">Copyright &copy; Your Website 2024</p>
+                </div>
+                <div class="col-md-6 text-md-end text-center">
+                    <p class="my-2">
+                        <a href="#" class="text-decoration-none" data-bs-toggle="tooltip" 
+                        title="Privacy Policy">Privacy Policy</a>
+                        ·
+                        <a href="#" class="text-decoration-none" data-bs-toggle="tooltip" 
+                        title="Terms & Conditions">Terms & Conditions</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
