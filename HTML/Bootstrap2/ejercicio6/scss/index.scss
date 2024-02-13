@@ -1,0 +1,34 @@
+/* Define mixin */
+@mixin featuretteHeading() {
+    font-size: 3.3rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Define standard variables and values for website */
+$myFontSize: 1.2rem;
+$headingFontSize: 2.3rem;
+
+/* Use the variables */
+h2 {
+    font-size: $headingFontSize;
+}
+
+.carousel-item p {
+    font-size: $myFontSize;
+}
+
+.carousel-item a {
+    font-size: $myFontSize;
+}
+
+h1 {
+    @include featuretteHeading();
+}
+
+.dummyHeading p {
+    font-size: $myFontSize;
+}
+
+#headCol {
+    font-size: $myFontSize;
+}
