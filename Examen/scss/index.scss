@@ -2,18 +2,16 @@
 @import "colors";
 
 /* Define mixin with one argument */
-@mixin heading($color, $fs) {
+@mixin heading($color) {
   color: $color;
-  font-size: $fs;
 }
-
 
 /* Define standard variables and values for website */
 $myFontSize: 1.05rem;
 
 /* Use the variables */
 .colorHeadMain {  // Billing and Payment headings
-  @include heading($myBlackColor, );
+  @include heading($myBlackColor);
 }
 
 #headingCart {  // Cart heading
