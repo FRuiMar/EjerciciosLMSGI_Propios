@@ -27,13 +27,17 @@ $myFontSize: 1.05rem;
   background-color: #0c5dd6;
 }
 
-.promoCode {
+.textoVerde {
   color: $myGreenColor;
 }
 
-#divBody {
-  font-size: $myFontSize;
-  background-color: $bg-color;
+#divBody1 {
+  background-color: $bg-color1;
+  color: $myBlackColor;
+}
+
+#divBody2 {
+  background-color: $bg-color2;
   color: $myBlackColor;
 }
 
