@@ -1,14 +1,14 @@
-/* Define mixin */
+/* Define el mixin. Lo preguntó en el examen */
 @mixin featuretteHeading() {
     font-size: 3.3rem;
     margin-bottom: 1.5rem;
 }
 
-/* Define standard variables and values for website */
+/* Define standard variables y valores para la web */
 $myFontSize: 1.2rem;
 $headingFontSize: 2.3rem;
 
-/* Use the variables */
+/* Usa las variables . Copio y pego todo esto. Revisar luego */
 h2 {
     font-size: $headingFontSize;
 }
