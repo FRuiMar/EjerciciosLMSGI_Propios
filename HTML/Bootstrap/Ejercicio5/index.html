@@ -7,17 +7,27 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Jose Manuel Ponferrada">
-    <link rel="stylesheet" href="css/index.css">
+    <meta name="author" content="Fran Ruiz">
+
+    <link rel="stylesheet" href="css/index.css">   <!-- nuevo para scss-->
 </head>
 
+
+
 <body id="body">
+
+    <!-- lo meto todo en un container-->
     <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="text-center py-4">
-                    <img class="img-fluid" src="./images/bootstrap-2.png" alt="Logo Bootstrap">
+
+         
+        <div class="row"><!-- primera fila contenedor que ocupa todo dentro de la cual voy a ir dividiendo  en otras filas-->
+
+            <!-- lprimera fila  que  está dividida en un div con la imagen y otro div con el texto h1,  y p centrado-->
+            <div class="row">      
+                <div class="text-center py-5">      <!-- padding y 5-->
+                    <img class="img-fluid" src="./images/bootstrap.png" alt="Logo Bootstrap">    <!-- copia y pega-->
                 </div>
+
                 <div class="text-center pb-5">
                     <h1 class="fw-bold">Checkout form</h1>
                     <p>Below is an example form built entirely with Bootstrap's form control. Each required form group
@@ -25,57 +35,20 @@
                         it.</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4 order-md-2 mb-4">
-                    <h4 class="d-flex justify-content-between align-items-center mb-3">
-                        <span class="carrito">Your cart</span>
-                        <span class="badge badge-secondary badge-pill bg-secondary rounded-pill">3</span>
-                    </h4>
-                    <ul class="list-group mb-3">
-                        <li class="list-group-item d-flex justify-content-between">
-                            <div>
-                                <h6 class="my-0">Product name</h6>
-                                <div class="text-muted small">Brief description</div>
-                            </div>
-                            <span class="text-muted">$12</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between">
-                            <div>
-                                <h6 class="my-0">Second product</h6>
-                                <div class="text-muted small">Brief description</div>
-                            </div>
-                            <span class="text-muted">$8</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between">
-                            <div>
-                                <h6 class="my-0">Third item</h6>
-                                <div class="text-muted small">Brief description</div>
-                            </div>
-                            <span class="text-muted">$5</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between bg-light">
-                            <div class="descuento">
-                                <h6 class="my-0">Promo code</h6>
-                                <div class="small">EXAMPLECODE</div>
-                            </div>
-                            <span class="descuento">-$5</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between">
-                            <span>Total (USD)</span>
-                            <strong>$20</strong>
-                        </li>
-                    </ul>
 
-                    <form class="card p-2">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Promo code">
-                            <button type="submit" class="btn btn-secondary">Redeem</button>
-                        </div>
-                    </form>
-                </div>
+
+            <!-- segunda fila  que  está dividida en dos div columnas-->
+            <div class="row">
+
+  
+
+                 <!-- primera columna  Billing address   -->
                 <div class="col-md-8 order-md-1">
                     <h4 class="mb-3 textoApartado">Billing address</h4>
-                    <form>
+
+                    <form>          <!-- w3schools bootstrap 5 forms     Nombre y Apellido -->
+
+                         <!-- Primera fila     Nombre y Apellido -->
                         <div class="row">
                             <div class="col-md-6 mb-3">
                                 <label for="firstName">First name</label>
@@ -95,6 +68,7 @@
                             </div>
                         </div>
 
+                        <!-- Segunda     Username -->
                         <div class="mb-3">
                             <label for="username">Username</label>
                             <div class="input-group">
@@ -106,6 +80,8 @@
                             </div>
                         </div>
 
+
+                        <!-- Tercera     Email -->
                         <div class="mb-3">
                             <label for="email">Email <span class="text-muted">(Optional)</span></label>
                             <input type="email" class="form-control" id="email" placeholder="you@example.com">
@@ -114,6 +90,8 @@
                             </div>
                         </div>
 
+
+                        <!-- Cuarta     Address -->
                         <div class="mb-3">
                             <label for="address">Address</label>
                             <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
@@ -122,11 +100,15 @@
                             </div>
                         </div>
 
+
+                        <!-- Quinta     Address 2 -->
                         <div class="mb-3">
                             <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
                             <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
                         </div>
 
+
+                        <!-- Quinta     Country  State y  Zip   en la misma fila dividida en columnas. -->
                         <div class="row">
                             <div class="col-md-5 mb-3">
                                 <label for="country">Country</label>
@@ -138,6 +120,7 @@
                                     Please select a valid country.
                                 </div>
                             </div>
+
                             <div class="col-md-4 mb-3">
                                 <label for="state">State</label>
                                 <select class="form-select d-block w-100" id="state" required="">
@@ -148,6 +131,7 @@
                                     Please provide a valid state.
                                 </div>
                             </div>
+                            
                             <div class="col-md-3 mb-3">
                                 <label for="zip">Zip</label>
                                 <input type="text" class="form-control" id="zip" placeholder="" required="">
@@ -155,22 +139,33 @@
                                     Zip code required.
                                 </div>
                             </div>
+
                         </div>
-                        <hr class="mb-4">
+
+
+                        <hr class="mb-4">   <!-- Separador -->
+
+                            <!-- w3schools     checkboxs  -->
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" id="same-address">
                             <label class="custom-control-label" for="same-address">Shipping address is the same as my
                                 billing address</label>
                         </div>
+
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" id="save-info">
                             <label class="custom-control-label" for="save-info">Save this information for next
                                 time</label>
                         </div>
-                        <hr class="mb-4">
+
+
+                        <hr class="mb-4"><!-- Separador -->
+
+
 
                         <h4 class="mb-3 textoApartado">Payment</h4>
 
+                        <!-- w3schools  bloque de radio buttons  -->
                         <div class="d-block my-3">
                             <div class="custom-control custom-radio">
                                 <input id="credit" name="paymentMethod" type="radio" class="custom-control-input"
@@ -188,6 +183,11 @@
                                 <label class="custom-control-label" for="paypal">PayPal</label>
                             </div>
                         </div>
+
+
+                        <!-- Igual que ejercicio anterior...  pero con valid feedback. no es lo mismo que la validacion del login, etc. 
+                                         copia y pega la parte del input.     -->
+
                         <div class="row">
                             <div class="col-md-6 mb-3">
                                 <label for="cc-name">Name on card</label>
@@ -205,6 +205,8 @@
                                 </div>
                             </div>
                         </div>
+
+
                         <div class="row">
                             <div class="col-md-3 mb-3">
                                 <label for="cc-expiration">Expiration</label>
@@ -221,18 +223,86 @@
                                 </div>
                             </div>
                         </div>
-                        <hr class="mb-4">
+
+                        <hr class="mb-4"> <!-- Separador -->
+
+                        <!-- Última fila para el botón  -->
                         <div class="d-grid rounded" id="checkoutButton">
                             <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
                         </div>
                         
                     </form>
                 </div>
+
+
+                <!-- segunda columna  Your Cart   -->
+                <div class="col-md-4 order-md-2 mb-4">
+                        <!-- <Encabezado h4.> -->
+                    <h4 class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="carrito">Your cart</span>
+                        <span class="badge badge-secondary badge-pill bg-secondary rounded-pill">3</span>
+                    </h4>
+
+                    <!-- Creamos lista no ordenada -->
+                    <ul class="list-group mb-3">
+
+                        <li class="list-group-item d-flex justify-content-between">   <!-- con el content-between hago que los elemenos se ordenen pegados a izquierda, y derecha dejando espacio entre ellos -->
+                            <div>
+                                <h6 class="my-0">Product name</h6>
+                                <div class="text-muted small">Brief description</div>
+                            </div>
+                            <span class="text-muted">$12</span>             <!-- span class para aplicar estilos a partes especificas de un texto. , es un elemento en línea.   RECORDAR -->
+                        </li>
+
+                        <li class="list-group-item d-flex justify-content-between">
+                            <div>
+                                <h6 class="my-0">Second product</h6>
+                                <div class="text-muted small">Brief description</div>
+                            </div>
+                            <span class="text-muted">$8</span>
+                        </li>
+
+                        <li class="list-group-item d-flex justify-content-between">
+                            <div>
+                                <h6 class="my-0">Third item</h6>
+                                <div class="text-muted small">Brief description</div>
+                            </div>
+                            <span class="text-muted">$5</span>
+                        </li>
+
+                        <li class="list-group-item d-flex justify-content-between bg-light">
+                            <div class="descuento">
+                                <h6 class="my-0">Promo code</h6>
+                                <div class="small">EXAMPLECODE</div>
+                            </div>
+                            <span class="descuento">-$5</span>
+                        </li>
+
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>Total (USD)</span>
+                            <strong>$20</strong>
+                        </li>
+                    </ul>
+
+
+                     <!-- Otro Form.. repasar  -->                                   
+                    <form class="card p-2">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Promo code">
+                            <button type="submit" class="btn btn-secondary">Redeem</button>               <!-- BOTÓN REDEEM -->
+                        </div>
+                    </form>
+                </div>
+
             </div>
         </div>
+
+
+
+        <!-- Footer.. copio y pego.     cambio datos  y en este aso todo centrado.  y el texto en gris muted. y los otros con href.  -->
         <footer class="my-5 pt-5 text-muted text-center text-div">
             <p class="mb-1">© 2017-2019 Company Name</p>
-            <ul class="list-inline">
+            <ul class="list-inline">                  <!-- Creamos lista, pero toda seguida en un alinea.  que es list-inline y luego list-inline-item.  -->  
                 <li class="list-inline-item"><a href="#">Privacy</a></li>
                 <li class="list-inline-item"><a href="#">Terms</a></li>
                 <li class="list-inline-item"><a href="#">Support</a></li>

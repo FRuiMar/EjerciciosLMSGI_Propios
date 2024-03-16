@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Layout Responsivo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Fran Ruiz">
+</head>
+
+<body class="bg-light"> <!-- asignamos el color de fondo y empezamos.  -->
+
+    <!-- primera fila (la verde -- sería como el header) -->
+    <div class="container">
+        <div class="row">
+            <div class="col p-1">
+                <div class="border border-2 border-dark" style="background-color: rgb(0, 255, 0); height: 50px;">&nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- segunda fila en este caso un bloque -->
+    <div class="container">
+        <div class="row">
+
+
+            <div class="col-sm-2 p-1"> <!--col que ocupe 3 de 12  en dispositivos medianos y un relleno de 1-->
+                <div class="h-100 bg-danger border border-2 border-dark">&nbsp;</div>
+                <!--establecemos la altura al 100% del contenedor y pongo el color rojo. -->
+            </div> <!--  &nbsp deja un espacio, de forma que nos aseguramos que exista una dimensión mínima.  -->
+
+
+            <!--col que ocupe el resto donde vamos a empezar a meter el resto de cosas.-->
+            <div class="col-sm">
+                <div>
+                            <!-- primera fila dentro de la  segunda columna  fila rosa?morada? puedo usar el color picker en la foto luego-->
+                        <div class="row">
+                            <div class="col p-1">
+                                <div class="border border-2 border-dark" 
+                                style="background-color: rgb(206, 56, 206); height: 50px;">&nbsp;</div>
+                            </div>
+                        </div>
+
+
+                        <!-- sgunda fila dentro de la  segunda columna pero la dividimos en dos columnas con md para que se aplique desde dispostivios medianos.-->
+                        <div class="row">
+                            <div class="col-md p-1">
+                                <div class="border border-2 border-dark" 
+                                style="background-color: orange; height: 150px;">&nbsp;</div>
+                            </div>
+                            <div class="col-md p-1">
+                                <div class="border border-2 border-dark" 
+                                style="background-color: orange; height: 150px;">&nbsp;</div>
+                            </div>
+                        </div>
+
+
+                        <!-- tercera fila dentro de la  segunda columna pero la dividimos en dos columnas.-->
+                        <div class="row">
+                            
+                            
+
+                             <!-- TIENE TRUCO. NO SON DOS FILAS.. ES UNA ENTERA DE 10 COLUMNAS
+                            POR ESO SE AGRUPAN ASÍ AL PONER MÁS PQUEÑA LA PANTALLA. -->                
+                            
+
+                            <!--recuerda que al dividir el espacio dentro del bloque vuelve a ser en 12 -->
+                            
+                             <!-- md-2 ocupara 2 de 12 en dispositivos medianos, 
+                                4 de 12 en pequeños y por último 6 en los más pequeños 
+                                agrupandolos de 5 en 5, luego de 3 en 3 y sobra 1, y luego de 2 en 2.-->
+
+                            <div class="col-md-2 col-sm-4 col-6 p-1">  
+                                <div class="border border-2 border-dark"
+                                style="background-color: blue; height: 100px;">&nbsp;</div>
+                            </div>
+
+                            <div class="col-md-2 col-sm-4 col-6 p-1">
+                                <div class="border border-2 border-dark"
+                                style="background-color: blue; height: 100px;">&nbsp;</div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-4 col-6 p-1">
+                                <div class="border border-2 border-dark"
+                                style="background-color: blue; height: 100px;">&nbsp;</div>
+                            </div>
+
+                            <div class="col-md-2 col-sm-4 col-6 p-1">
+                                <div class="border border-2 border-dark"
+                                style="background-color: blue; height: 100px;">&nbsp;</div>
+                            </div>
+
+                            <div class="col-md-2 col-sm-4 col-6 p-1">
+                                <div class="border border-2 border-dark"
+                                style="background-color: blue; height: 100px;">&nbsp;</div>
+                            </div>
+
+
+                            <div class="col-md-2 col-sm-4 col-6 p-1">
+                                <div class="border border-2 border-dark"
+                                style="background-color: blue; height: 100px;">&nbsp;</div>
+                            </div>
+
+                            <div class="col-md-2 col-sm-4 col-6 p-1">
+                                <div class="border border-2 border-dark"
+                                style="background-color: blue; height: 100px;">&nbsp;</div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-4 col-6 p-1">
+                                <div class="border border-2 border-dark"
+                                style="background-color: blue; height: 100px;">&nbsp;</div>
+                            </div>
+
+                            <div class="col-md-2 col-sm-4 col-6 p-1">
+                                <div class="border border-2 border-dark"
+                                style="background-color: blue; height: 100px;">&nbsp;</div>
+                            </div>
+
+                            <div class="col-md-2 col-sm-4 col-6 p-1">
+                                <div class="border border-2 border-dark"
+                                style="background-color: blue; height: 100px;">&nbsp;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="container"> <!-- copio la primera fila primera fila (la verde - sería el footer) -->
+            <div class="row">
+                <div class="col p-1">
+                    <div class="border border-2 border-dark" 
+                    style="background-color: rgb(0, 255, 0);"> <!-- quito el height para sque sea más fina -- height: 50px;--> 
+                        &nbsp;</div>
+                </div>
+            </div>
+        </div>
+</body>

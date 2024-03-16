@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Fran Ruiz">
+</head>
+<body class="bg-primary">
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-7">
+                <div class="card">
+
+                                 <!-- Header.   la parte facilita. -->
+                    <div class="card-header">
+                        <div class="display-6 m-5 text-center">Create Account</div>
+                    </div>
+
+
+                             <!-- Body.   Esta vez más fácil que otros. -->
+                    <div class="card-body mt-3">
+                        <form action="#" class="was-validated">  
+
+                            <div class="row">                <!-- reptie el patrón. -->
+
+
+                                <div class="col-md">      <!-- ponemos en dos columnas -->
+                                    <label for="firstName" class="form-label">First Name</label>
+                                    <input type="text" class="form-control mt-1" required 
+                                             id="firstName" placeholder="Enter first name" name="firstName">
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                                </div>
+
+
+                                <div class="col-md">
+                                    <label for="lastName" class="form-label">Last Name</label>
+                                    <input type="text" class="form-control mt-1" required 
+                                        id="lastName" placeholder="Enter last name" name="lastName">
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                                </div>
+
+
+                                <div class="mt-3 mb-3">
+                                    <label for="pwd" class="form-label">Email</label>
+                                    <input type="email" class="form-control mt-1" required 
+                                        id="email" placeholder="Enter password" name="email">
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                                </div>
+
+
+                                <div class="col-md">   <!-- ponemos en dos columnas -->
+                                    <label for="password" class="form-label">Password</label>
+                                    <input type="password" class="form-control mt-1" required 
+                                        id="password" placeholder="Enter password" name="password">
+                                        <div class="valid-feedback">Valid.</div>
+                                        <div class="invalid-feedback">Please fill out this field.</div>
+                                </div>
+
+
+                                <div class="col-md">
+                                    <label for="confirm" class="form-label">Confirm password</label>
+                                    <input type="password" class="form-control mt-1" required 
+                                        id="confirm" placeholder="Confirm Password" name="confirm">
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                                </div>
+
+
+                                <div class="d-grid mt-5 mb-2">
+                                    <button type="submit" class="btn btn-primary btn-lg">Create Account</button>
+                                </div>
+
+                              </div>
+                        </form> 
+                    </div>
+
+                            <!-- Footer.   copia y pega para el examen. y ajustalo al tamaño y los enlaces -->
+                    <div class="card-footer text-center p-3">
+                        <a href="login.html" class="card-link link-offset-2 link-underline link-underline-opacity-0">Have an account? Go to login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <!-- Footer de la web.  igual que el otro.. copia y pega en el examen.. y ajustalo al tamaño y los enlaces -->
+
+    <div class="footer bg-light fixed-bottom py-2 container-fluid">        <!--mirar si el padding y queda bien o lo pongo más grande.  -->
+
+        <div class="row  align-items-baseline">      <!--base line para alinear respecto a la linea base.. es decir el punto más bajo.  -->
+
+                         <!-- los divido en dos para poder poner a la izquierda y a la derecha cada uno  -->
+                           
+            <div class="col-md text-start text-muted mt-3 ps-3">    <!--col-md para dispositivos medianos.     Al compienzo. izquierda -->
+                <p>Copyright &copy; Your Website 2020</p>          
+            </div>
+
+            <div class="col-md d-flex justify-content-end">             <!--col-md para dispositivos medianos.  .  y el just-cont-end para alinear dentro del d-flex  al extremo derecho. (al final). -->
+                <a href="#" class="pe-2 link-offset-2 link-underline link-underline-opacity-0">Privacy Policy</a>
+                <p class="">· &nbsp;</p>
+                <a href="#" class="link-offset-2 link-underline link-underline-opacity-0 pe-3">Terms & Conditions</a>
+            </div>
+        </div>
+    </div>
+
+</body>
