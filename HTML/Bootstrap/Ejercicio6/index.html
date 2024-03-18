@@ -17,47 +17,61 @@
     <div class="container-fluid">
         <div class="row">
             <!--Side NavBar-->
-            <div class="col-sm-auto bg-primary sticky-top">
-                <div class="d-flex flex-sm-column flex-row flex-nowrap bg-primary align-items-center sticky-top">
-                    <ul class="nav nav-pills nav-flush flex-sm-column flex-row flex-nowrap mb-auto mx-auto text-center justify-content-between w-100 px-3 align-items-center">
+            <!--que se quede siempre arriba. y aplique la columna a partir de dispositivos sm small.-->
+            <div class="col-sm-auto bg-light sticky-top">
+                <div class="d-flex flex-sm-column flex-row flex-nowrap bg-light align-items-center sticky-top">
+
+                    <!--creo una lista.-->
+                    <ul
+                        class="nav nav-pills nav-flush flex-sm-column flex-row flex-nowrap mb-auto mx-auto text-center justify-content-between w-100 px-3 align-items-center">
+
+                        <!--meto los items. copia y pega.-->
+                        <li> <!--link-dark para que salgan negros. si no pones nada, salen azulp por defect..-->
+                            <a href="/" class="d-block p-3 link-dark text-decoration-none" title=""
+                                data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Icon-only">
+                                <i class="fa-brands fa-bootstrap fs-3"></i>
+                            </a>
+                        </li>
                         <li class="nav-item">
-                            <a href="./index.html" class="nav-link py-5 px-2" title="Home" data-bs-toggle="tooltip"
-                                data-bs-placement="right" data-bs-original-title="Home">
-                                <i class="fa-solid fa-house fs-3 text-white"></i>
+                            <!--recuerda que la y ahora afecta a la distancia entre los iconos. padding y..-->
+                            <a href="./index.html" class="nav-link link-dark py-4 px-2" title="Home"
+                                data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Home">
+                                <i class="fa-solid fa-house fs-3"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="nav-link py-5 px-2" title="Search" data-bs-toggle="tooltip"
+                            <a href="#" class="nav-link link-dark py-4 px-2" title="Search" data-bs-toggle="tooltip"
                                 data-bs-placement="right" data-bs-original-title="Search">
-                                <i class="fa-solid fa-magnifying-glass fs-3 text-white"></i>
+                                <i class="fa-solid fa-magnifying-glass fs-3"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="nav-link py-5 px-2" title="Users" data-bs-toggle="tooltip"
+                            <a href="#" class="nav-link link-dark py-4 px-2" title="Users" data-bs-toggle="tooltip"
                                 data-bs-placement="right" data-bs-original-title="Users">
-                                <i class="fa-solid fa-user fs-3 text-white"></i>
+                                <i class="fa-solid fa-user fs-3"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="nav-link py-5 px-2" title="Layers" data-bs-toggle="tooltip"
+                            <a href="#" class="nav-link link-dark py-4 px-2" title="Layers" data-bs-toggle="tooltip"
                                 data-bs-placement="right" data-bs-original-title="Layers">
-                                <i class="fa-solid fa-layer-group fs-3 text-white"></i>
+                                <i class="fa-regular fa-heart fs-3 "></i>
                             </a>
                         </li>
-                        <li>
-                            <a href="#" class="nav-link py-5 px-2" title="Filters" data-bs-toggle="tooltip"
-                                data-bs-placement="right" data-bs-original-title="Filters">
-                                <i class="fa-solid fa-filter fs-3 text-white"></i>
-                            </a>
-                        </li>
+
                     </ul>
 
                 </div>
             </div>
 
+
+
+
             <div class="col-sm p-0">
-                <!--Carousel-->
-                <div id="indexTop" class="container-fluid">
+
+
+
+                <!-- Aquí empezamos con el carrusel -    llamado   Carousel-->
+                <div id="Top" class="container-fluid">
                     <div class="row">
                         <div class="col p-0 mb-5">
                             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -71,7 +85,7 @@
                                 </div>
                                 <div class="carousel-inner">
 
-                                    <!--First Carousel Item-->
+                                    <!--Primer item copiamo sy pegamos cambiando el texto. -->
                                     <div class="carousel-item">
                                         <div class="bg-secondary" style="height: 350px;">&nbsp;</div>
                                         <div class="carousel-caption text-start mb-4">
@@ -84,7 +98,6 @@
                                         </div>
                                     </div>
 
-                                    <!--Second Carousel Item-->
                                     <div class="carousel-item active">
                                         <div class="bg-secondary" style="height: 350px;">&nbsp;</div>
                                         <div class="carousel-caption text-center mb-4">
@@ -97,7 +110,7 @@
                                         </div>
                                     </div>
 
-                                    <!--Third Carousel Item-->
+
                                     <div class="carousel-item">
                                         <div class="bg-secondary" style="height: 350px;">&nbsp;</div>
                                         <div class="carousel-caption text-end mb-4">
@@ -126,61 +139,68 @@
                     </div>
                 </div>
 
-                <!--Body-->
-                <div class="container mt-5">
 
-                    <!--Heading Columns-->
-                    <div class="row" id="headCol">
-                        <!--Column 1-->
-                        <div class="col-md-4 text-center px-4 mb-5">
-                            <div class="d-flex justify-content-center">
-                                <div class="bg-secondary rounded-circle" style="height: 150px; width: 150px;">&nbsp;
+
+
+
+
+                <!-- segunda fila.. creamos el contenedor y metemos la fila que dividimos en 3 columnas. -->
+
+                <div class="container pt-5">
+                    <div class="row pb-5">
+                        <div class="col-lg-4 px-3 pb-5">
+                            <div class="text-center d-flex flex-column h-100">
+                                <div class="mb-auto">
+                                    <img class="rounded-circle mb-3" src="resources/images/81e9bsbLK5L.webp" alt=""
+                                        style="max-width: 200px; max-height: 200px;">
+                                    <h3 class="card-title">Heading</h3>
+                                    <p class="card-text">Some representative placeholder content for the three columns
+                                        of text below the carousel. This is the first column.</p>
                                 </div>
+                                <a href="#" class="btn btn-secondary mt-auto mx-auto">View details &raquo</a>   <!--  recuerda btn secondary para que salga gris como en el video. -->
                             </div>
-                            <h3>Heading</h3>
-                            <p>
-                                Some representative placeholder content
-                                for the three columns of text below the
-                                carousel. This is the first column.
-                            </p>
-                            <a class="btn btn-secondary" href="#">View details &raquo;</a>
                         </div>
-                        <!--Column 2-->
-                        <div class="col-md-4 text-center px-4 mb-5">
-                            <div class="d-flex justify-content-center">
-                                <div class="bg-secondary rounded-circle" style="height: 150px; width: 150px;">&nbsp;
+                        <div class="col-lg-4 px-3 pb-5">
+                            <div class="text-center d-flex flex-column h-100">
+                                <div class="mb-auto">
+                                    <img class="rounded-circle mb-3" src="resources/images/81e9bsbLK5L.webp" alt=""
+                                        style="max-width: 200px; max-height: 200px;">
+                                    <h3 class="card-title">Heading</h3>
+                                    <p class="card-text">Anothe exciting bit of representative placeholder content. This
+                                        time, we've moved on to the second column.</p>
                                 </div>
+                                <a href="#" class="btn btn-secondary mt-auto mx-auto">View details &raquo</a>
                             </div>
-                            <h3>Heading</h3>
-                            <p>
-                                Another exciting bit of representative
-                                placeholder content. This time, we've moved
-                                on to the second column.
-                            </p>
-                            <a class="btn btn-secondary" href="#">View details &raquo;</a>
                         </div>
-                        <!--Column 3-->
-                        <div class="col-md-4 text-center px-4 mb-5">
-                            <div class="d-flex justify-content-center">
-                                <div class="bg-secondary rounded-circle" style="height: 150px; width: 150px;">&nbsp;
+                        <div class="col-lg-4 px-3 pb-5">
+                            <div class="text-center d-flex flex-column h-100">
+                                <!--        tela para que los botones me queden al mismo nivel en esta linea con el flex          -->
+                                <div class="mb-auto">
+                                    <img class="rounded-circle mb-3" src="resources/images/81e9bsbLK5L.webp" alt=""
+                                        style="max-width: 200px; max-height: 200px;">
+                                    <h3 class="card-title">Heading</h3>
+                                    <p class="card-text">And lastly this, the third column of representative placeholder
+                                        content.</p>
                                 </div>
+                                <a href="#" class="btn btn-secondary mt-auto mx-auto">View details &raquo</a>    
                             </div>
-                            <h3>Heading</h3>
-                            <p>
-                                And lastly this, the third column of
-                                representative placeholder content.
-                            </p>
-                            <a class="btn btn-secondary" href="#">View details &raquo;</a>
                         </div>
                     </div>
+                </div>
 
-                    <!--Linea de corte-->
-                    <hr class="my-4" />
 
-                    <!--First Heading Dummy-->
-                    <div class="row py-5 dummyHeading">
-                        <!--Text-->
-                        <div class="col-sm-7 d-flex flex-column justify-content-center">
+
+
+
+
+
+
+
+                 <!-- tercera fila.. creamos el contenedor y metemos los dummies. -->
+                <div class="container">
+                    <hr>
+                    <div class="row align-items-center py-5">
+                        <div class="col-md-6">
                             <h1>First featurette heading.
                                 <span class="text-secondary">It'll blow your mind.</span>
                             </h1>
@@ -190,26 +210,18 @@
                                 prose here.
                             </p>
                         </div>
-                        <!--Image-->
-                        <div class="col-sm-5">
-                            <img class="w-100" alt="500x500 Dummy Image"
-                                src="./resources/images/500x500-dummy-image.jpg">
-                        </div>
+                        <div class="col-md-6 text-end order-md-2"><img class="img-fluid"
+                                src="https://www.davidhechler.com/wp-content/uploads/2016/07/500x500-dummy-image.jpg"
+                                alt=""></div>
                     </div>
+                </div>
 
-                    <!--Linea de corte-->
-                    <hr class="my-4" />
 
-                    <!--Second Heading Dummy-->
-                    <div class="row py-5 dummyHeading">
-                        <!--Image-->
-                        <div class="col-sm-5">
-                            <img class="w-100" alt="500x500 Dummy Image"
-                                src="./resources/images/500x500-dummy-image.jpg">
-                        </div>
-                        <!--Text-->
-                        <div class="col-sm-7 d-flex flex-column justify-content-center
-                            order-first order-sm-2">
+
+                <div class="container">
+                    <hr>
+                    <div class="row align-items-center py-5">
+                        <div class="col-md-6 order-md-2">
                             <h1>Oh yeah, it's that good.
                                 <span class="text-secondary">See for yourself.</span>
                             </h1>
@@ -219,15 +231,15 @@
                                 with some actual real-world content in place.
                             </p>
                         </div>
+                        <div class="col-md-6 text-start order-md-1"><img class="img-fluid"
+                                src="https://www.davidhechler.com/wp-content/uploads/2016/07/500x500-dummy-image.jpg"
+                                alt=""></div>
                     </div>
-
-                    <!--Linea de corte-->
-                    <hr class="my-4" />
-
-                    <!--Third Heading Dummy-->
-                    <div class="row py-5 dummyHeading">
-                        <!--Text-->
-                        <div class="col-sm-7 d-flex flex-column justify-content-center">
+                </div>
+                <div class="container">
+                    <hr>
+                    <div class="row align-items-center py-5">
+                        <div class="col-md-6">
                             <h1>And lastly, this one.
                                 <span class="text-secondary">Checkmate.</span>
                             </h1>
@@ -238,39 +250,26 @@
                                 of what this would look like with some actual content.
                                 Your content.
                             </p>
-                        </div>
-                        <!--Image-->
-                        <div class="col-sm-5">
-                            <img class="w-100" alt="500x500 Dummy Image"
-                                src="./resources/images/500x500-dummy-image.jpg">
+                            <div class="col-md-6 text-end order-md-2"><img class="img-fluid"
+                                    src="https://www.davidhechler.com/wp-content/uploads/2016/07/500x500-dummy-image.jpg"
+                                    alt=""></div>
                         </div>
                     </div>
 
-                    <!--Linea de corte-->
-                    <hr class="my-4" />
-                </div>
-
-                <!--Footer-->
-                <div class="container mt-5">
-                    <div class="row py-4">
-                        <div class="col-sm-6 text-sm-start text-center">
-                            <p class="text-black-50">&copy; 2017-2021 Company, Inc
-                                ·
-                                <a href="#" data-bs-toggle="tooltip" title="Privacy">Privacy</a>
-                                ·
-                                <a href="#" data-bs-toggle="tooltip" title="Terms">Terms</a>
-                            </p>
-                        </div>
-                        <div class="col-sm-6 text-sm-end text-center">
-                            <a href="#indexTop">Back to top</a>
+                    <div class="container">
+                        <hr>
+                        <div class="row">
+                            <div class="col py-5">&copy; 2017-2021 Company, Inc · <span><a href=""
+                                        onclick="return false;">Privacy</a></span>
+                                · <span><a href="" onclick="return false;">Terms</a></span>
+                            </div>
+                            <div class="col py-5 text-end"><a href="#top">Back to top</a></div>
+                            <!-- Este botón me lleva al comienzo de la página.. donde está el primer comentario. -->
                         </div>
                     </div>
-                </div>
 
+                </div>
             </div>
-
-        </div>
-    </div>
 
 </body>
 

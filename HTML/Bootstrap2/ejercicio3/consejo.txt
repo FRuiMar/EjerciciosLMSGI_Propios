@@ -1,4 +1,0 @@
-class="d-none d-md-block"
-
-Hace que un div en md y superiores sea visible en bloque.
-Sin embargo, por debajo de ese tamaño dejará de ser visible.
