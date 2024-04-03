@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
   <xsl:output method="html" encoding="iso-8859-1"/>
-  <xsl:template match="/juegoTanques">
+  <xsl:template match="/primerDia1DAW">
     <html>
       <head>
-        <title>Superheroes</title>
+        <title>Horario</title>
         <style type="text/css">
           td, th {
             width: 30px;
@@ -18,7 +18,7 @@
       </head>
       <body>
         
-        <xsl:for-each select="jugadasGraficas/jugadaGrafica">
+        <xsl:for-each select="horario/dia">
           <table border="1" with="90%" align="center">
             <tr>
               <th></th>
@@ -28,8 +28,7 @@
               <th>4</th>
               <th>5</th>
               <th>6</th>
-              <th>7</th>
-              <th>8</th>
+
             </tr>
   	        <xsl:call-template name="bucleForFila">
   	        	<xsl:with-param name="i">1</xsl:with-param>
@@ -46,7 +45,7 @@
 
   <xsl:template name="bucleForFila">
   	<xsl:param name="i"/>
-  	<xsl:if test="$i &lt;= 8">
+  	<xsl:if test="$i &lt;= 6">
   		<tr>
   		  <th><xsl:value-of select="$i"/></th>
 	  		<xsl:call-template name="bucleForColumna">
