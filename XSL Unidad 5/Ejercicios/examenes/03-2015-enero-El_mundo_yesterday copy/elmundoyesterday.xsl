@@ -9,7 +9,10 @@
           <title><xsl:value-of select="@nombre"/></title>
         <style type="text/css">
             <xsl:call-template name="css"/>
-          </style></head>
+        </style>
+      </head>
+      
+      
       <body>
         <div style="width: 1000px; margin: 0 auto;">
           <div style="width: 1000px;"><img src="{@logo}" width="997" height="115"/></div>
