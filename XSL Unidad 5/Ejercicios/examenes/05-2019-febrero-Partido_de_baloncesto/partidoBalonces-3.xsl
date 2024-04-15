@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
   <xsl:output method="html" encoding="iso-8859-1"/>
-  <xsl:template match="/partidoBalonces-3.xml">
+  <xsl:template match="/partidoBalononcesto">
     <html>
       <head>
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>

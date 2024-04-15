@@ -6,5 +6,6 @@
     </meta>
     <projectTree name="LenguajeMarcas.xpr">
         <folder path="../../../../"/>
+        <folder path="../../../../../LMSGI_2023-24/"/>
     </projectTree>
 </project>
