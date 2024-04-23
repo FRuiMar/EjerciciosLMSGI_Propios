@@ -34,16 +34,15 @@
       <tr class="tituloTabla">
         <td><xsl:value-of select="nombre"/></td>
       </tr>
-      <tr>
-        <td>poderes: <xsl:value-of select="poderes"/></td>
+      <tr class="tituloTabla">
+        <td>Poderes: <xsl:value-of select="poderes"/></td>
       </tr>
-      <tr>
-        <td>amigos: <xsl:value-of select="amigos"/></td>
+      <tr class="tituloTabla">
+        <td>Amigos: <xsl:value-of select="amigos"/></td>
       </tr>
     </table>
     <br/>
   </xsl:template>
-
-
-
+ 
+  
 </xsl:stylesheet>
