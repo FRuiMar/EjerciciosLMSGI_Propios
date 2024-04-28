@@ -27,7 +27,7 @@
     <table border="1">
       <tr>
         <td style="background: {$color}" >Esto es una tabla con posicion: <xsl:value-of select="$numeroFila"/></td>
-        <td><img width="300px">
+        <td><img style="width: 200px;">
             <xsl:attribute name="src"><xsl:value-of select="$imagen"/></xsl:attribute>
         </img></td>
       </tr>

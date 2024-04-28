@@ -36,13 +36,13 @@
                         <th>Gormiti</th>
                         <th>Tribu</th>
                     </tr>
-                    <xsl:apply-templates select="gormitis/tablero/gormitiEnMapa"/>
+                    <xsl:apply-templates select="gormitis"/>
                 </table>
             </body>
         </html>
     </xsl:template>
     
-    <xsl:template match="gormitiEnMapa">
+    <xsl:template match="gormiti">
         <xsl:variable name="tribuUrl" select="/gormitis/gormiti[@tribu=current()/@tribu]"/>
         <xsl:variable name="rowClass">
             <xsl:choose>
