@@ -27,28 +27,23 @@
     
     <!-- Encontrar el juego más caro -->
     <xsl:template name="juegoMasCaro">
-        <xsl:variable name="maxAlquiler">
-            <xsl:for-each select="/videoclub/videojuegos/videoJuego">
-                <xsl:sort select="@alquilerDiario" data-type="number" order="descending"/>
+        <xsl:for-each select="/videoclub/videojuegos/videoJuego">
+            <xsl:sort select="@alquilerDiario" order="descending"/>
                 <xsl:if test="position() = 1">
-                    <xsl:value-of select="@alquilerDiario"/>
+                    <p>El videojuego más caro es:  "<xsl:value-of select="."/>"</p>
                 </xsl:if>
-            </xsl:for-each>
-        </xsl:variable>
-        <xsl:value-of select="/videoclub/videojuegos/videoJuego[@alquilerDiario = $maxAlquiler]"/>
+        </xsl:for-each>
+
     </xsl:template>
     
     <!-- Encontrar la película con la duración más corta -->
     <xsl:template name="peliculaDuracionMinima">
-        <xsl:variable name="minDuracion">
             <xsl:for-each select="/videoclub/Peliculas/pelicula">
-                <xsl:sort select="@duracionEnMinutos" data-type="number" order="ascending"/>
+                <xsl:sort select="@duracionEnMinutos" order="ascending"/>
                 <xsl:if test="position() = 1">
-                    <xsl:value-of select="@duracionEnMinutos"/>
+                     <p>La pelicula más corta es:  "<xsl:value-of select="@titulo"/>"</p>
                 </xsl:if>
             </xsl:for-each>
-        </xsl:variable>
-        <xsl:value-of select="/videoclub/Peliculas/pelicula[@duracionEnMinutos = $minDuracion]"/>
     </xsl:template>
     
     
