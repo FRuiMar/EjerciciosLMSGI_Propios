@@ -37,7 +37,13 @@ return <superheroe>
         </superheroe>
 } </Ejercicio04>
 
-
+  <!-- el for es un bucle normal, y let lo utilizo para definir variables, 
+  solo que al indicarle directamente el nodo la variable irá tomando los 
+  valores según se pase por los diferentes nodos-->
+  <!-- El mayor problema es que al usar for, la variable obtiene un solo valor cada vez, 
+  con lo que al usar el avg, aparece la media de cada uno de los valores por separado, media de 6..  es 6.., media de 8 es 8... etc. 
+  pero al pasarle directamente el nodo, se crea una especie de lista, o secuencia de elementos a los cuales al pasarle
+  el avg, sí dan la información correcta de la media de todos 8, 7, 6, 6, 6 , 6  media 6.5 -->
 <Ejercicio05>La media de todos los poderes es: " { 
 let $superheroe := doc('superheroes1-6.xml')/marvel/superheroe
 return avg($superheroe/@nivel)
