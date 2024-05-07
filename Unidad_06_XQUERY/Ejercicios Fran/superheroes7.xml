@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="ejercicio1Fran.xquery"?>
+<?xml-stylesheet type="text/xsl" href="ejercicio7Fran.xquery"?>
 
 <marvel>
   <superheroe nombre="Thor" imagen="https://static1.ara.cat/clip/bb9a1c21-ce80-4b48-b293-c91f8c37534e_16-9-aspect-ratio_default_0.jpg" color="#FF0000" poderes="Martillo mágico, Dios, Fuerza" amigos="Iron Man y Hulk" nivel="7"/>
